@@ -1,0 +1,15 @@
+@import "compass/css3";
+@import "compass/utilities";
+
+/* NUMBERS ----------------------------------------------------------------------- */
+
+$line: 24;
+$column: 100% / 18;
+$font-size: 16;
+$em: $font-size * 1;
+$default-border-radius: 3px;
+
+/* COLORS ------------------------------------------------------------------------ */
+
+$background: #fff;
+$color: #333;

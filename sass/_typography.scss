@@ -1,0 +1,21 @@
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    color: $color;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.61;
+    font-weight: 400;
+}
+
+/* LISTS ------------------------------------------------------------------------- */
+
+ul,
+ol {
+    padding: 0;
+}

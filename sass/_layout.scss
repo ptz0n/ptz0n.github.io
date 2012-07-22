@@ -1,0 +1,47 @@
+body,
+html {
+    background: #111;
+}
+
+[role=banner],
+[role=contentinfo],
+.about {
+    color: #BFBFBF;
+}
+
+.about {
+    background: #272727;
+
+    .content {
+        padding: 0;
+    }
+
+    ul {
+        list-style: circle;
+    }
+
+    h2 {
+        color: #fff;
+    }
+}
+
+[role=banner],
+[role=contentinfo] {
+    color: #ccc;
+}
+
+.content {
+    max-width: 55em;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+.inner {
+    padding: 0.5em 2em;
+}
+
+/* MAIN -------------------------------------------------------------------------- */
+
+[role=main] {
+    background: #fff;
+}

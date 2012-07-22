@@ -1,0 +1,98 @@
+::selection {
+    background: #999;
+    color: #222;
+    text-shadow: none;
+}
+
+/* LINKS ------------------------------------------------------------------------- */
+
+a {
+    text-decoration: none;
+    color: #12c;
+    border-bottom: 1px solid #12C;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: #c00;
+        border-color: #c00;
+        outline: 0;
+    }
+}
+
+[role=banner],
+[role=contentinfo],
+.about {
+    a {
+        border: 0;
+        color: #fff;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #eee;
+        }
+    }
+
+    ::selection {
+        background: #ccc;
+        color: #fff;
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    a {
+        border: 0;
+        color: #333;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: #111;
+        }
+    }
+}
+
+/* NAVIGATION -------------------------------------------------------------------- */
+
+[role=navigation] {
+    float: right;
+}
+
+/* BUTTONS ----------------------------------------------------------------------- */
+
+
+
+/* SOCIAL LINKS ------------------------------------------------------------------ */
+
+.links {
+    li {
+        @include inline-block;
+        margin-right: .5em;
+    }
+
+    a {
+        display: block;
+        background: url('../images/icons.png');
+        width: 32px;
+        height: 32px;
+        text-indent: -9999em;
+
+        &:hover,
+        &:focus,
+        &:active {
+            @include opacity(0.7);
+        }
+    }
+
+    .dribbble {
+        background-position: -42px 0;
+    }
+
+    .github {
+        background-position: -84px 0;
+    }
+}
