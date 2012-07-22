@@ -1,0 +1,16 @@
+---
+layout: default
+title: Erik Eng utvecklar för webb &amp; mobilt
+---
+
+Erik Eng, tidigare Pettersson, är en utvecklare med användarfokus som på dagarna förbättrar e-handel genom öppen källkod.
+
+Ibland finns det tid för roliga sidoprojekt som <a href="http://www.hittebo.se/" title="Hittebo">social bostadsförmedling</a> eller tillgängliggörande av <a href="http://tagtider.net/">Tågtider</a> för resenärer i Sverige.
+
+<section class="posts">
+    <article>
+        <h2><a href="#">Snart nytt efternamn</a></h2>
+        <time>22 juli</time>
+        <p>Det är nära nu.</p>
+    </article>
+</section>
