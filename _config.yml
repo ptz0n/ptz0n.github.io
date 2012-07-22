@@ -1,0 +1,17 @@
+url: http://ptz0n.github.com
+title: Erik Eng utvecklar för webb &amp; mobilt
+description: Öppen källkod och tillgänglig data gör dagen intressant och webben bättre.
+
+author: Erik Eng
+email: mail@ptz0n.se
+github: ptz0n
+twitter: ptz0n
+dribbble: ptz0n
+
+permalink: /post/:title.html
+
+future: false
+auto: true
+server: true
+
+exclude: ["config.rb"]

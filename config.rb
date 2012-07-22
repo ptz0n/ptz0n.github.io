@@ -1,7 +1,7 @@
 # Params
 http_path = "/"
 css_dir = "css"
-sass_dir = "sass"
+sass_dir = "_sass"
 images_dir = "images"
 javascripts_dir = "js"
 

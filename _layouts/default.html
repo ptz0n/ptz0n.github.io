@@ -1,0 +1,76 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="sv"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="sv"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="sv"> <![endif]-->
+<!--[if gt IE 8]> <!--> <html class="no-js" lang="sv"> <!--<![endif]-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{{ page.title }}</title>
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+        <meta name="author" content="{{ site.author }}">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"/>
+
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" href="css/style.css" media="all" />
+        <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Open+Sans:400,600"/>
+
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+
+        <script>
+            var _gaq = [['_setAccount', 'UA-33567818-1'], ['_trackPageview']];
+            (function(d, t) {
+                var g = d.createElement(t),
+                    s = d.getElementsByTagName(t)[0];
+                g.src = '//www.google-analytics.com/ga.js';
+                s.parentNode.insertBefore(g, s);
+            }(document, 'script'));
+        </script>
+    </head>
+    <body>
+
+        <header role="banner">
+            <div class="content">
+                <a href="#" title="Om Erik Eng" role="navigation">Om</a>
+                <a href="#">Erik Eng</a> om webb &amp; mobilt</span>
+            </div>
+        </header>
+
+        <section class="about">
+            <div class="content">
+                <div class="inner">
+                    <h2>Erik Eng</h2>
+                    <ul>
+                        <li>Utvecklare på <a href="http://improove.se/">Improove</a></li>
+                        <li>Gillar <a href="http://www.opendata.se/">öppen data</a></li>
+                        <li>Bidrar till <a href="https://github.com/ptz0n">öppen källkod</a></li>
+                    </ul>
+                    <ul class="links">
+                        <li><a href="https://twitter.com/ptz0n" class="twitter">Twitter</a></li>
+                        <li><a href="https://github.com/ptz0n" class="github">Github</a></li>
+                        <li><a href="http://dribbble.com/ptz0n" class="dribbble">Dribbble</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div role="main">
+            <div class="content">
+                {{ content }}
+            </div>
+        </div>
+
+        <footer role="contentinfo">
+            <div class="content">
+                <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a> Erik Eng
+            </div>
+        </footer>
+
+    </body>
+</html>
