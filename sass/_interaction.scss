@@ -81,6 +81,11 @@ h4 {
         height: 32px;
         text-indent: -9999em;
 
+        @include respond-to(retina) {
+            background: url('../images/icons@2x.png');
+            background-size: 106px 32px;
+        }
+
         &:hover,
         &:focus,
         &:active {
@@ -90,9 +95,17 @@ h4 {
 
     .dribbble {
         background-position: -42px 0;
+
+        @include respond-to(retina) {
+            background-position: -37px 0;
+        }
     }
 
     .github {
         background-position: -84px 0;
+
+        @include respond-to(retina) {
+            background-position: -74px 0;
+        }
     }
 }
