@@ -1,5 +1,10 @@
 @mixin respond-to($media) {
-    @if $media == landscape {
+    @if $media == mobile {
+        @media only screen 
+        and (min-device-width : 320px) 
+        and (max-device-width : 480px) { @content; }
+    }
+    @else if $media == landscape {
         @media screen and (min-width: 321px) { @content; }
     }
     @else if $media == tablet {
