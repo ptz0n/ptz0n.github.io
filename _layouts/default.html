@@ -15,6 +15,7 @@
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="/css/style.css" media="all" />
+        <link rel="alternate" type="application/rss+xml" title="Inlägg" href="/rss.xml" />
         <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" />
 
         <!--[if lt IE 9]>
@@ -41,32 +42,7 @@
             </div>
         </header>
 
-        {% case page.layout %}
-        {% when 'default' %}
-            <section class="about">
-                <div class="content">
-                    <div class="inner">
-                        <h2>Erik Eng</h2>
-                        <ul>
-                            <li>Utvecklare på <a href="http://improove.se/">Improove</a></li>
-                            <li>Gillar <a href="http://www.opendata.se/">öppen data</a></li>
-                            <li>Bidrar till <a href="https://github.com/ptz0n">öppen källkod</a></li>
-                        </ul>
-                        <ul class="links">
-                            <li><a href="https://twitter.com/ptz0n" class="twitter">Twitter</a></li>
-                            <li><a href="https://github.com/ptz0n" class="github">Github</a></li>
-                            <li><a href="http://dribbble.com/ptz0n" class="dribbble">Dribbble</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        {% endcase %}
-
-        <div role="main">
-            <div class="content">
-                {{ content }}
-            </div>
-        </div>
+        {{ content }}
 
         <footer role="contentinfo">
             <div class="content">

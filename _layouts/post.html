@@ -1,8 +1,17 @@
 ---
 layout: default
 ---
-<article>
-    <h1>{% if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>
-    <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
-    {{ content }}
-</article>
+
+<div role="main">
+    <div class="content">
+
+        <article>
+            <h1>{% if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>
+            <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+            {{ content }}
+        </article>
+
+    </div>
+</div>
+
+{% include about.html %}
