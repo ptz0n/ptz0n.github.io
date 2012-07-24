@@ -19,6 +19,7 @@
         {% if page.description %}
             <meta property="og:description" content="{{ page.description }}" />
         {% endif %}
+        <meta property="og:site_name" content="{{ site.title }}" />
 
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
@@ -43,7 +44,7 @@
 
         <header role="banner">
             <div class="content">
-                {% unless page.layout == 'front' %}
+                {% unless page.url == '/index.html' %}
                     <a href="/" title="Om Erik Eng" role="navigation">Om</a>
                 {% endunless %}
                 <a href="/">Erik Eng</a> om webb &amp; mobilt</span>
