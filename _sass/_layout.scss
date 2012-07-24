@@ -49,6 +49,28 @@ html {
     background: #fff;
 }
 
+.posts {
+    article {
+        border-top: 1px solid #ccc;
+        padding: 1em 0;
+
+        &:first-child {
+            border: 0;
+        }
+    }
+
+    h2 {
+        font-size: 1em;
+        margin: 0;
+    }
+
+    time {
+        float: right;
+        @include inline-block();
+        margin-left: 1em;
+    }
+}
+
 /* COMMENTS ---------------------------------------------------------------------- */
 
 .fb_iframe_widget,

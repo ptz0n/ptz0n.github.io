@@ -10,8 +10,8 @@ Ibland finns det tid för roliga sidoprojekt som <a href="http://www.hittebo.se/
 <section class="posts">
     {% for post in site.posts %}
         <article>
-            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <time datetime="{{ page.date }}">{{ post.date | date_to_string }}</time>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         </article>
     {% endfor %}
 </section>
