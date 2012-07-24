@@ -16,7 +16,7 @@ layout: default
 
         <article>
             <h1>{% if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>
-            <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+            <time datetime="{{ page.date }}">{{ page.date | date:'%d %b %Y' | downcase }}</time>
             {{ content }}
         </article>
 
