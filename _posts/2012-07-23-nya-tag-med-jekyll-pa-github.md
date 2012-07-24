@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Nya bloggtag med Jekyll på Github
+description: 
 ---
 
 Skomakarens barn. Så brukar vi ofta beskriva våra egna sajter. Jag pysslade ihop min blogg och portfolio med ganska färska PHP-kunskaper, nyförälskad i öppna standarder som [RSS](http://cyber.law.harvard.edu/rss/rss.html), [OpenSearch](http://www.opensearch.org/) etc. Detta var tiden då CSS-tekniker som [sliding doors](http://www.alistapart.com/articles/slidingdoors/) var på tapeten.
