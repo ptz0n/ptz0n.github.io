@@ -16,4 +16,6 @@ future: false
 auto: true
 server: true
 
+sitemap: ["/index.html"]
+
 exclude: ["README.md", "config.rb"]
