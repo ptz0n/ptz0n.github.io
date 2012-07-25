@@ -8,12 +8,12 @@ img {
 
     &.left {
         float: left;
-        margin-right: 1em;
+        margin: 0 2em .5em -2em;
     }
 
     &.right {
         float: right;
-        margin-left: 1em;
+        margin: 0 -2em .5em 1em;
     }
 
     &.center {
