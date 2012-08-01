@@ -1,0 +1,74 @@
+@import "base";
+@import "typography";
+
+html,
+body {
+    background: #fff;
+}
+
+/* TYPOGRAPHY -------------------------------------------------------------------- */
+
+body
+{
+    font-family: "Nimbus Roman No9 L", "Times New Roman", serif;
+    font-size: 12pt;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    page-break-after: avoid;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+pre {
+    page-break-inside: avoid;
+}
+
+/* INTERACTION ------------------------------------------------------------------- */
+
+a:link,
+a:visited {
+    font-weight: 700;
+    border: 0;
+
+    &:after {
+        content: " (" attr(href) ") ";
+        color: #333;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 90%;
+    }
+}
+
+a[href^="/"]:after {
+    content: " (http://erikeng.se" attr(href) ") ";
+}
+
+/* LAYOUT ------------------------------------------------------------------------ */
+
+[role=banner],
+[role=banner] a {
+    color: #000;
+}
+
+[role=navigation],
+[role=contentinfo],
+.about,
+.posts,
+.fb_iframe_widget iframe {
+    display: none;
+}
+
+[role=main] {
+    border: 0;
+}
