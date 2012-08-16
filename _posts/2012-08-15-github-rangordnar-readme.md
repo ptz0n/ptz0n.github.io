@@ -10,7 +10,7 @@ dokumentation av projekt används README-filer. GitHub renderar dessa filer till
 från en [mängd olika format](https://github.com/github/markup/).
 
 Av dessa föredrar jag [Markdown](http://daringfireball.net/projects/markdown/) (.md),
-men tillägg i WordPress-katalogen kräver en README med filändelsen txt. GitHub parsar
+men tillägg i [WordPress-katalogen](http://wordpress.org/extend/) kräver en README med filändelsen txt. GitHub parsar
 txt-filer som `plain/text` trots att de innehåller Markdown-syntax.
 
 För att vara både GitHub och WordPress-katalogen till lags för presentation av mina
