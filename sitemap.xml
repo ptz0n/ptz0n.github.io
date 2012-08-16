@@ -12,7 +12,7 @@ layout: nil
     {% endfor %}
 
     {% for page in site.pages %}
-        {% if site.sitemap contains page.url %}
+        {% if site.sitemap.include contains page.url %}
             <url>
                 <loc>{{ site.url }}{{ page.url }}</loc>
                 <lastmod>{{ lastmod | date_to_xmlschema }}</lastmod>

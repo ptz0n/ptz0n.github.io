@@ -4,6 +4,8 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="sv" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
 <!--[if gt IE 8]> <!--> <html class="no-js" lang="sv"> <!--<![endif]-->
     <head>
+        <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>{{ page.title }}</title>
         <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
@@ -13,8 +15,8 @@
         <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1" />
 
         <meta name="google-site-verification" content="34bUc_U6BAEE5duPq_ThKJJZ3HTK1GmI5XWHkQ5xr6k" />
-        <meta property="fb:admins" content="516158352"/>
-        <meta property="fb:app_id" content="481444638550896" />
+        <meta property="fb:admins" content="{{ site.facebook.admins }}"/>
+        <meta property="fb:app_id" content="{{ site.facebook.app }}" />
         <meta property="og:title" content="{{ page.title }}" />
         {% if page.description %}
             <meta property="og:description" content="{{ page.description }}" />
@@ -26,13 +28,12 @@
         <link rel="stylesheet" href="/css/style.css" media="all" />
         <link rel="stylesheet" href="/css/print.css" media="print" />
         <link rel="alternate" type="application/rss+xml" title="Inlägg" href="/rss.xml" />
-        <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" />
 
         <!--[if lt IE 9]>
             <script src="/js/html5shiv.js"></script>
         <![endif]-->
         <script>
-            var _gaq = [['_setAccount', 'UA-33567818-1'], ['_trackPageview']];
+            var _gaq = [['_setAccount', 'UA-{{ site.analytics.profile }}-1'], ['_trackPageview']];
             (function(d, t) {
                 var g = d.createElement(t),
                     s = d.getElementsByTagName(t)[0];

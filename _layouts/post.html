@@ -7,7 +7,7 @@ layout: default
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/sv_SE/all.js#xfbml=1&appId=481444638550896";
+    js.src = "//connect.facebook.net/sv_SE/all.js#xfbml=1&appId={{ site.facebook.app }}";
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -21,7 +21,7 @@ layout: default
         </article>
 
         <aside>
-            <fb:comments href="{{ site.url }}{{ page.url }}" num_posts="2" width="500"></fb:comments>
+            <fb:comments href="{{ site.url }}{{ page.url }}" num_posts="{{ site.facebook.posts }}" width="{{ site.facebook.width }}"></fb:comments>
         </aside>
 
         {% include posts.html %}

@@ -9,6 +9,13 @@ github: ptz0n
 twitter: ptz0n
 dribbble: ptz0n
 flattr: ptz0n
+facebook:
+    app: 481444638550896
+    posts: 5
+    width: 500
+    admins: 516158352
+analytics:
+    profile: 33567818
 
 permalink: /post/:title.html
 
@@ -16,6 +23,7 @@ future: false
 auto: true
 server: true
 
-sitemap: ["/index.html"]
+sitemap:
+    include: ["/index.html"]
 
 exclude: ["README.md", "config.rb"]
