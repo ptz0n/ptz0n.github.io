@@ -25,7 +25,7 @@
         {% if page.image %}
             <meta property="og:image" content="{{ site.url }}/images/{{ page.image }}" />
         {% endif %}
-        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+        <meta property="og:url" content="{{ site.url }}{% unless page.url == '/index.html' %}{{ page.url }}{% endunless %}" />
         <meta property="og:site_name" content="{{ site.title }}" />
 
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
