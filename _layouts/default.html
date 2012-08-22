@@ -15,12 +15,17 @@
         <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1" />
 
         <meta name="google-site-verification" content="34bUc_U6BAEE5duPq_ThKJJZ3HTK1GmI5XWHkQ5xr6k" />
+
         <meta property="fb:admins" content="{{ site.facebook.admins }}"/>
         <meta property="fb:app_id" content="{{ site.facebook.app }}" />
         <meta property="og:title" content="{{ page.title }}" />
         {% if page.description %}
             <meta property="og:description" content="{{ page.description }}" />
         {% endif %}
+        {% if page.image %}
+            <meta property="og:image" content="{{ site.url }}/images/{{ page.image }}" />
+        {% endif %}
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
         <meta property="og:site_name" content="{{ site.title }}" />
 
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />

@@ -2,6 +2,7 @@
 layout: post
 title: Missa inte WordCamp Stockholm 2012
 description: Den 22 oktober samlas 175 personer på Waterfront med WordPress i centrum.
+image: wpsthlm.png
 ---
 
 Den 22 oktober är det dags igen, den här gången på [Waterfront](http://www.stockholmwaterfront.com/) och i vanlig ordning står [Thord Daniel Hedengren](http://tdh.se/) & [Odd Alice](http://oddalice.se/) bakom initiativet. Jag kommer vara på plats för att hålla en session, kanske om webbplatssök eller deploy-rutiner.
