@@ -31,15 +31,23 @@ Själva passet utformas enkelt med JSON och bildresurser. Innehållet signeras m
 
 Via e-post eller serva dem direkt över HTTP(S) med headern `Content-type: application/vnd.apple.pkpass`. Passbook syncar pass via iCloud mellan enheter med samma konto.
 
+Just nu finns Passbook bara för iPhone och iPod touch.
+
 ## Pusha uppdateringar till pass
 
 Har du deklarerat nyklarna `webServiceURL` och `authenticationToken` i ditt pass meddelar Passbook din server om varje enhet som lägger till det. Då har du `pushToken` för given enhet och kan meddela Passbook när det finns uppdaterade pass att hämta.
 
 Detta görs via Apple Push Notification Service (APNS), precis som andra push-notiser till appar i iOS.
 
+Som [Joakim](https://twitter.com/kalasjocke) förtydligade; håller inte Passbook koll på om ett värdebevis är förbrukat. Point of Sale (POS) behöver själv hantera detta och meddela Passbook om uppdateringar.
+
 ## Integrera med appar
 
 Det fina med Passbook är att du som utvecklare inte behöver någon app för att skapa, distribuera eller uppdatera pass. Men genom att ange ett eller flera app-ID:n i dina pass ges åtkomst för att läsa och uppdatera dem. Detta kan vara intressant när användaren vill ladda sitt kaffekort eller välja plats på flyget.
+
+## Passbook i Sverige
+
+Ännu är det bara ett fåtal aktörer i Sverige som meddelat att de kommer implementera Passbook. Pinga mig om du hittar någon app eller tjänst som går att testa så återkommer jag med en utvärdering.
 
 ## Gräv djupare i Passbook
 
