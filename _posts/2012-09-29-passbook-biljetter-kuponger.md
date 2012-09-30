@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Hur Passbook håller dina biljetter &amp; kuponger
-description: iPhone med iOS6 ger användare tillgång till Passbook för att lagra och hålla koll på biljetter &amp; kuponger.
+description: iPhone med iOS 6 ger användare tillgång till Passbook för att lagra och hålla koll på biljetter &amp; kuponger.
 image: passbook-icon.png
 ---
 
