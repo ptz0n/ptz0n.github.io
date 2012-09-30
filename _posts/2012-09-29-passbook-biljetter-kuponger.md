@@ -2,7 +2,7 @@
 layout: post
 title:  Hur Passbook håller dina biljetter &amp; kuponger
 description: iPhone med iOS6 ger användare tillgång till Passbook för att lagra och hålla koll på biljetter &amp; kuponger.
-image: passbook.png
+image: passbook-icon.png
 ---
 
 En del av nya iOS 6 är __Passbook__ som samlar dina biljetter, medlemskort, bonuscheckar och kuponger. Jag blev snabbt imponerad av hur enkelt det är att skapa och utfärda _pass_, såhär funkar det.
@@ -44,5 +44,6 @@ Det fina med Passbook är att du som utvecklare inte behöver någon app för at
 ## Gräv djupare i Passbook
 
 * [Passbook for Developers](https://developer.apple.com/passbook/)
+* [PHP-bibliotek för att skapa `.pkpass`-filer](https://github.com/tschoffelen/PHP-PKPass)
 
 __Vill du erbjuda dina kunder eller användare information via Passbook? Tveka inte att kontakta mig, jag hjälper gärna till.__
