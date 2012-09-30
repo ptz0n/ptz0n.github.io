@@ -8,7 +8,9 @@ email: mail@ptz0n.se
 github: ptz0n
 twitter: ptz0n
 dribbble: ptz0n
-flattr: ptz0n
+flattr:
+    user: ptz0n
+    language: sv_SE
 facebook:
     app: 481444638550896
     posts: 5
