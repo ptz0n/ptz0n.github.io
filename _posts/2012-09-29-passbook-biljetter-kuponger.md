@@ -67,6 +67,8 @@ Utifrån arrayen returnerad i steg 3, hämtar Passbook en eller flera uppdaterad
 
 Det fina med Passbook är att du som utvecklare inte behöver någon app för att skapa, distribuera eller uppdatera pass. Men genom att ange ett eller flera app-ID:n i dina pass ges åtkomst för att läsa och uppdatera dem. Detta kan vara intressant när användaren vill ladda sitt kaffekort eller välja plats på flyget.
 
+<img src="{{ site.url }}/images/passbook-appar.png" alt="Integrera Passbook med appar" class="center" />
+
 ## Passbook i Sverige
 
 Ännu är det bara ett fåtal aktörer i Sverige som meddelat att de kommer implementera Passbook. Pinga mig om du hittar någon app eller tjänst som går att testa så återkommer jag med en utvärdering.
