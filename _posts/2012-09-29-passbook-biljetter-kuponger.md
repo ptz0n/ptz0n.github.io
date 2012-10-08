@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Hur Passbook håller dina biljetter &amp; kuponger
-description: iPhone med iOS 6 ger användare tillgång till Passbook för att lagra och hålla koll på biljetter &amp; kuponger.
+description: Passbook i iPhone eller iPod touch med iOS 6 ger användare möjlighet att lagra och hålla koll på biljetter &amp; kuponger.
 image: passbook-icon.png
 ---
 
@@ -67,7 +67,7 @@ Utifrån arrayen returnerad i steg 3, hämtar Passbook en eller flera uppdaterad
 
 Det fina med Passbook är att du som utvecklare inte behöver någon app för att skapa, distribuera eller uppdatera pass. Men genom att ange ett eller flera app-ID:n i dina pass ges åtkomst för att läsa och uppdatera dem. Detta kan vara intressant när användaren vill ladda sitt kaffekort eller välja plats på flyget.
 
-<img src="{{ site.url }}/images/passbook-appar.png" alt="Integrera Passbook med appar" class="center" />
+<img src="{{ site.url }}/images/passbook-appar.png" alt="Integrera Passbook med appar" title="Passbook Sverige" class="center" />
 
 ## Passbook i Sverige
 
