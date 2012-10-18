@@ -78,5 +78,6 @@ Det fina med Passbook är att du som utvecklare inte behöver någon app för at
 * [Passbook for Developers](https://developer.apple.com/passbook/)
 * [PHP-bibliotek för att skapa `.pkpass`-filer](https://github.com/tschoffelen/PHP-PKPass)
 * [Exempel-implementation av Passbook web service i Rails](https://github.com/mattt/passbook_rails_example), tack [Anton](https://twitter.com/mptre)
+* [Coding Passbook](https://www.billguard.com/blog/2012/10/coding-passbook-lessons-learned/)
 
 __Vill du erbjuda dina kunder eller användare information via Passbook? Tveka inte att kontakta mig, jag hjälper gärna till.__
