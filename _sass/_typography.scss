@@ -30,12 +30,12 @@ ol {
 
 blockquote {
     margin: 0;
-    font: italic 1.2em Georgia, Times, serif;
+    font: italic 1.2em/1.4 Georgia, Times, serif;
     color: #555;
 
     &:before {
         position: absolute;
-        margin: -.1em 0 0 -.55em;
+        margin: -.2em 0 0 -.55em;
         font-size: 3em;
         content: '\201C';
         color: #222;
