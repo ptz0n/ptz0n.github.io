@@ -31,7 +31,7 @@ Själva passet utformas enkelt med JSON och bildresurser. Innehållet signeras m
 
 Via e-post eller serva dem direkt över HTTP(S) med headern `Content-type: application/vnd.apple.pkpass`. Passbook syncar pass via iCloud mellan enheter med samma konto.
 
-Just nu finns Passbook bara för iPhone och iPod touch.
+Just nu finns Passbook bara för iPhone och iPod touch samt i Safari och Mail på Passbook Mountain Lion 10.8.2.
 
 ## Pusha uppdateringar till pass
 
@@ -73,11 +73,18 @@ Det fina med Passbook är att du som utvecklare inte behöver någon app för at
 
 Ännu är det bara ett fåtal aktörer i Sverige som meddelat att de kommer implementera Passbook. Pinga mig om du hittar någon app eller tjänst som går att testa så återkommer jag med en utvärdering.
 
-## Gräv djupare i Passbook
+## Passbook i Mountain Lion 10.8.2
+
+Från version 10.8.2 av OS X, lanserad 19 september, kan du granska och lägga till pass för att synca till Passbook via iCloud från Safari och Mail.
+
+> This pass will be added to Passbook on your iPhone or iPod touch using iCloud.
+
+## Gräv djupare i &amp; testa Passbook
 
 * [Passbook for Developers](https://developer.apple.com/passbook/)
 * [PHP-bibliotek för att skapa `.pkpass`-filer](https://github.com/tschoffelen/PHP-PKPass)
 * [Exempel-implementation av Passbook web service i Rails](https://github.com/mattt/passbook_rails_example), tack [Anton](https://twitter.com/mptre)
 * [Coding Passbook](https://www.billguard.com/blog/2012/10/coding-passbook-lessons-learned/)
+* [PassSource (beta)](http://www.passsource.com/)
 
 __Vill du erbjuda dina kunder eller användare information via Passbook? Tveka inte att kontakta mig, jag hjälper gärna till.__
