@@ -82,6 +82,7 @@ Från version 10.8.2 av OS X, lanserad 19 september, kan du granska och lägga t
 ## Gräv djupare i &amp; testa Passbook
 
 * [Passbook for Developers](https://developer.apple.com/passbook/)
+* [Tågbiljetten i Passbook med Biljettapp](http://biljettapp.se)
 * [PHP-bibliotek för att skapa `.pkpass`-filer](https://github.com/tschoffelen/PHP-PKPass)
 * [Exempel-implementation av Passbook web service i Rails](https://github.com/mattt/passbook_rails_example), tack [Anton](https://twitter.com/mptre)
 * [Coding Passbook](https://www.billguard.com/blog/2012/10/coding-passbook-lessons-learned/)
