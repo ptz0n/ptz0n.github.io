@@ -79,6 +79,20 @@ Från version 10.8.2 av OS X, lanserad 19 september, kan du granska och lägga t
 
 > This pass will be added to Passbook on your iPhone or iPod touch using iCloud.
 
+## Felsök Passbook-pass
+
+Om ett pass inte dyker upp eller vill läggas till i Passbook är det läge att ta en titt i log-filen efter vad som gått snett.
+
+### I Mac OS X (även iOS Simulator)
+
+Vid granskning av pass i Safari, Mail eller iOS Simulator loggas fel till systemloggen.
+
+`$ tail -f /var/log/system.log`
+
+### På enhet (iPhone eller iPod touch)
+
+Via Xcode organizer (Window > Organizer).
+
 ## Gräv djupare i &amp; testa Passbook
 
 * [Passbook for Developers](https://developer.apple.com/passbook/)
