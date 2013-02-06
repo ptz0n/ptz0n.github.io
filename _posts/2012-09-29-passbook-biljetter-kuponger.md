@@ -79,6 +79,15 @@ Från version 10.8.2 av OS X, lanserad 19 september, kan du granska och lägga t
 
 > This pass will be added to Passbook on your iPhone or iPod touch using iCloud.
 
+## Det senaste om Passbook
+
+### iOS 6.1 – 28 januari 2013
+
+Ny välkomstvy i Passbook samt mindre justeringar av hur pass hanteras.
+
+<img src="{{ site.url }}/images/passbook-valkommen.png" alt="Passbook i iOS 6.1" class="center" />
+
+
 ## Felsök Passbook-pass
 
 Om ett pass inte dyker upp eller vill läggas till i Passbook är det läge att ta en titt i log-filen efter vad som gått snett.
