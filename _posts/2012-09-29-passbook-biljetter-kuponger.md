@@ -43,7 +43,7 @@ Som [Joakim](https://twitter.com/kalasjocke) förtydligade; håller inte Passboo
 
 ### 1. Passbook registrerar ett pass
 
-`POST {webServiceURL}/v1/passes/{passTypeIdentifier}/{serialNumber}`
+    POST {webServiceURL}/v1/passes/{passTypeIdentifier}/{serialNumber}
 
 Denna request gör varje enhet när ett pass läggs till av användare eller iCloud. I request body (JSON) finns `pushToken`.
 
@@ -53,13 +53,13 @@ Detta meddelar Passbook (via APNS) att något pass utfärdat av dig (`passTypeId
 
 ### 3. Nu vill Passbook veta vilka pass som är uppdaterade
 
-`GET {webServiceURL}v1/devices/{deviceLibraryIdentifier}/registrations/{passTypeIdentifier}[?passesUpdatedSince=tag]`
+    GET {webServiceURL}v1/devices/{deviceLibraryIdentifier}/registrations/{passTypeIdentifier}[?passesUpdatedSince=tag]
 
 Svara med tidsstämpel för senaste ändring av något pass för enheten samt en array med en eller flera `serialNumber` (pass).
 
 ### 4. Passbook hämtar uppdaterade pass
 
-`GET {webServiceURL}v1/passes/{passTypeIdentifier}/{serialNumber}`
+    GET {webServiceURL}v1/passes/{passTypeIdentifier}/{serialNumber}
 
 Utifrån arrayen returnerad i steg 3, hämtar Passbook en eller flera uppdaterade `.pkpass`-filer.
 
@@ -96,7 +96,7 @@ Om ett pass inte dyker upp eller vill läggas till i Passbook är det läge att 
 
 Vid granskning av pass i Safari, Mail eller iOS Simulator loggas fel till systemloggen.
 
-`$ tail -f /var/log/system.log`
+    $ tail -f /var/log/system.log
 
 ### På enhet (iPhone eller iPod touch)
 

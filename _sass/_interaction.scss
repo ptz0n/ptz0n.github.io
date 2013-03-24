@@ -86,7 +86,25 @@ h4 {
 
 /* BUTTONS ----------------------------------------------------------------------- */
 
+button,
+.button,
+input[type=submit] {
+    @include inline-block();
+    background: #ccc;
+    color: #333;
+    padding: .4em .8em;
+    border: 1px solid #888;
+    border-top-color: #999;
+    border-bottom-color: #777;
+    @include border-radius(3px);
+    @include text-shadow(rgba(255, 255, 255, .4) 0 1px 0);
 
+    &:hover,
+    &:focus {
+        background: #bbb;
+        color: #000;
+    }
+}
 
 /* SOCIAL LINKS ------------------------------------------------------------------ */
 
@@ -142,5 +160,18 @@ h4 {
 }
 
 .flattr {
-    border: 0;
+    border: 1px solid #82a255;
+    border-top-color: #8fb15f;
+    border-bottom-color: #728f4a;
+    @include text-shadow(#728f4a 0 -1px 0);
+    background: #91bc5d;
+    color: #fff;
+    padding: .4em .8em;
+
+    &:hover,
+    &:focus {
+        border-color: #728f4a;
+        color: #fff;
+        background: #86ac57;
+    }
 }
