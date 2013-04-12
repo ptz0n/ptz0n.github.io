@@ -51,10 +51,19 @@
 
         <header role="banner">
             <div class="content">
-                {% unless page.url == '/index.html' %}
-                    <a href="/" title="Om Erik Eng" role="navigation">Om</a>
-                {% endunless %}
-                <a href="/">Erik Eng</a> om webb &amp; mobilt
+                {% if page.lang == 'en' %}
+                    {% if page.url == '/en/index.html' %}
+                        <a href="/" title="Swedish" role="navigation">SE</a>
+                    {% else %}
+                        <a href="/en/" title="About Erik Eng" role="navigation">About</a>
+                    {% endif %}
+                    <a href="/en/">Erik Eng</a> on web &amp; mobile
+                {% else %}
+                    {% unless page.url == '/index.html' %}
+                        <a href="/" title="Om Erik Eng" role="navigation">Om</a>
+                    {% endunless %}
+                    <a href="/">Erik Eng</a> om webb &amp; mobilt
+                {% endif %}
             </div>
         </header>
 

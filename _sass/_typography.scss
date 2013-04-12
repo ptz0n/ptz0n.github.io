@@ -54,21 +54,19 @@ code {
 
 pre {
     display: block;
-    word-break: break-all;
-    word-wrap: break-word;
     white-space: pre;
-    white-space: pre-wrap;
+    word-wrap: normal;
     background: #f5f5f5;
     border: 1px solid #ccc;
-    border: 1px solid
-    rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     @include border-radius(4px);
     padding: .8em 1em;
     margin: 0 -1em;
-    overflow: scroll;
+    overflow-x: scroll;
 
     code {
         background: none;
         padding: 0;
+        white-space: inherit;
     }
 }
