@@ -73,6 +73,9 @@ Det fina med Passbook är att du som utvecklare inte behöver någon app för at
 
 Ännu är det bara ett fåtal aktörer i Sverige som meddelat att de kommer implementera Passbook. Pinga mig om du hittar någon app eller tjänst som går att testa så återkommer jag med en utvärdering.
 
+* [Biljettapp](http://biljettapp.se) ([Demo](https://passbook.biljettapp.se/TEST0001))
+* [Testa Ticksters Passbook-biljetter](http://labs.tickster.com/passbook/)
+
 ## Passbook i Mountain Lion 10.8.2
 
 Från version 10.8.2 av OS X, lanserad 19 september, kan du granska och lägga till pass för att synca till Passbook via iCloud från Safari och Mail.
@@ -81,11 +84,11 @@ Från version 10.8.2 av OS X, lanserad 19 september, kan du granska och lägga t
 
 ## Det senaste om Passbook
 
+### [Hack fixar SJ-biljetter till Passbook](http://alltommac.se/nyheter/hack-fixar-sj-biljetter-till-passbook/)
+
 ### iOS 6.1 – 28 januari 2013
 
 Ny välkomstvy i Passbook samt mindre justeringar av hur pass hanteras.
-
-<img src="{{ site.url }}/images/passbook-valkommen.png" alt="Passbook i iOS 6.1" class="center" />
 
 
 ## Felsök Passbook-pass
