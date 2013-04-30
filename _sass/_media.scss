@@ -32,7 +32,11 @@ img {
     overflow: hidden;
     margin: 1em 0;
     height: 0;
-    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-bottom: 56.25%; /* 16:9 ratio */
+
+    &.four-three {
+        padding-bottom: 75%; /* 4:3 ratio */
+    }
 
     iframe,
     object,
