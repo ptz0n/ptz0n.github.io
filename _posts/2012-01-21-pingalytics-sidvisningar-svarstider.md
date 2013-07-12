@@ -9,6 +9,8 @@ I slutet av 2011 började jag med ett eget utvecklingsprojekt på Improove, Site
 
 Detta löste jag genom att korrelera befintlig data som vi hade tillgänglig, såväl i realtid som historiskt. Nämligen besöksstatistik från Google Analytics och svarstider från Pingdom.
 
+<img src="{{ site.url }}/images/pingalytics.png" alt="Pingalytics" class="center" />
+
 ## Pingalytics blev tjänsten
 
 På kontoret har vi en skärm som alltid visar data från de senaste 24 timmarna, vilken har dragit blickarna till sig från många gäster. Snart uppmärksammande även Pingdom projektet i sin podcast, med påtryckningar om att detta borde bli en webbtjänst.
