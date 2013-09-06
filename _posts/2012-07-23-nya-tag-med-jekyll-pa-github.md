@@ -12,6 +12,6 @@ Idag finns det otroligt många aspekter att väga in vid kravställning, utveckl
 
 Via [Andreas Karlsson](http://andreask.se/) fick jag nys om [Jekyll](https://github.com/mojombo/jekyll/), som genererar statiska filer utifrån layouts och innehåll skrivet i (exempelvis) [Markdown](http://daringfireball.net/projects/markdown/). En trevlig detalj är att du kan låta [Github pages](http://pages.github.com/) bygga (generera) och hosta filerna.
 
-Detta gav mig de begränsningar som krävdes för att istället fokusera på det viktiga, innehållet. Jag kunde dock inte hålla mig borta från att mobilanpassa layout och serva enheter med retinaskärmar [lite skarpare grafik](http://davidpaulsson.se/en/webb-design-retina-displays/ "Web design on retina displays").
+Detta gav mig de begränsningar som krävdes för att istället fokusera på det viktiga, innehållet. Jag kunde dock inte hålla mig borta från att mobilanpassa layout och serva enheter med retinaskärmar [lite skarpare grafik](http://davidpaulsson.se/webbdesign-och-retinaskarmar/ "Web design on retina displays").
 
 __Nu i bröllopstider är det mycket att stå i, men håll utkik efter lite mer tekniska inlägg framöver.__
