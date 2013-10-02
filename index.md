@@ -8,3 +8,5 @@ Erik Eng, tidigare Pettersson, är en utvecklare som tänker lite extra på slut
 Ibland finns det tid för roliga sidoprojekt som <a href="http://www.hittebo.se/" title="Hittebo">social bostadsförmedling</a> eller tillgängliggörande av <a href="http://tagtider.net/">Tågtider</a> via <a href="http://biljettapp.se">Biljettapp</a>. Se inlägg nedan med mina tankar om teknik och trender inom webbutveckling.
 
 {% include posts.html %}
+
+Jag har just nu ett gäng [domäner till salu](/domaner/).
