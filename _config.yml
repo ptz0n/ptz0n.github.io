@@ -27,6 +27,6 @@ auto: true
 server: true
 
 sitemap:
-    include: ["/index.html"]
+    include: ["/index.html", "/en/index.html", "/domaner/index.html"]
 
 exclude: ["README.md", "config.rb"]
