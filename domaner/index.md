@@ -18,7 +18,6 @@ Under åren har jag förvaltat ett gäng domäner. Det vore ju bättre om de kom
 * kryckor.se
 * linasmatkas.se
 * omboka.se
-* pendlapp.se
 * pingalytics.com
 * polarbeer.se
 * stationkartan.se
