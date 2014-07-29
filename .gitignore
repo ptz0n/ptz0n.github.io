@@ -5,3 +5,4 @@ Thumbs.db
 *.scssc
 _site/
 node_modules/
+*.lock
