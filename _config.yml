@@ -31,4 +31,4 @@ sitemap:
 
 exclude: ["README.md", "config.rb"]
 
-gems: ['jekyll-sitemap', 'jekyll-redirect-from']
+#gems: ['jekyll-sitemap', 'jekyll-redirect-from']
