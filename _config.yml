@@ -1,9 +1,9 @@
 url: http://erikeng.se
-title: Erik Eng utvecklar för webb &amp; mobilt
-description: Öppen källkod och tillgänglig data gör dagen intressant och webben bättre.
+title: "Erik Eng utvecklar för webb &amp; mobilt"
+description: "Öppen källkod och tillgänglig data gör dagen intressant och webben bättre."
 language: sv-se
 
-author: Erik Eng
+author: "Erik Eng"
 email: mail@ptz0n.se
 github: ptz0n
 twitter: ptz0n
@@ -23,8 +23,6 @@ analytics:
 permalink: /post/:title.html
 
 future: false
-auto: true
-server: true
 
 sitemap:
     include: ["/index.html", "/en/index.html", "/domaner/index.html"]
