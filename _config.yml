@@ -30,5 +30,3 @@ sitemap:
     include: ["/index.html", "/en/index.html", "/domaner/index.html"]
 
 exclude: ["README.md", "config.rb"]
-
-#gems: ['jekyll-sitemap', 'jekyll-redirect-from']
