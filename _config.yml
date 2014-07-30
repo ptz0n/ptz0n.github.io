@@ -8,17 +8,17 @@ email: mail@ptz0n.se
 github: ptz0n
 twitter: ptz0n
 dribbble: ptz0n
-google: 105380157389113696457
+google: "105380157389113696457"
 flattr:
     user: ptz0n
     language: sv_SE
 facebook:
-    app: 481444638550896
+    app: "481444638550896"
     posts: 5
     width: 500
-    admins: 516158352
+    admins: "516158352"
 analytics:
-    profile: 33567818
+    profile: "33567818"
 
 permalink: /post/:title.html
 
