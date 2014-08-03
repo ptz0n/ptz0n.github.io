@@ -21,6 +21,7 @@ analytics:
     profile: "33567818"
 
 permalink: /post/:title.html
+markdown: kramdown
 
 future: false
 
