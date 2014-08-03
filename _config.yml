@@ -22,10 +22,10 @@ analytics:
 
 permalink: /post/:title.html
 markdown: kramdown
+timezone: "Europe/Paris"
 
 future: false
 
-sitemap:
-    include: ["/index.html", "/en/index.html", "/domaner/index.html"]
+exclude: ["README.md", "config.rb", "404.html", "node_modules"]
 
-exclude: ["README.md", "config.rb"]
+gems: ["jekyll-sitemap", "jekyll-redirect-from"]

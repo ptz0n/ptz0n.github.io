@@ -2,7 +2,7 @@
 layout: post
 title: Pingalytics relaterar sidvisningar med svarstider
 description: Hur mashup-idén blev utvecklingsprojekt och webbtjänsten Pingalytics.
-guid: http://ptz0n.se/blogg/webbutveckling/pingalytics-relaterar-sidvisningar-med-svarstider/
+redirect_from: /blogg/webbutveckling/pingalytics-relaterar-sidvisningar-med-svarstider/
 ---
 
 I slutet av 2011 började jag med ett eget utvecklingsprojekt på Improove, SiteDash. Vars funktion var att tydligt visualisera hur våra kunders webbplatser mår rent tekniskt.
