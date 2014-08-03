@@ -3,15 +3,13 @@ layout: default
 ---
 
 <div id="fb-root"></div>
-<script>
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/sv_SE/all.js#xfbml=1&appId={{ site.facebook.app }}";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=481444638550896&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <div role="main">
     <div class="content">
@@ -30,7 +28,11 @@ layout: default
                 </a>
             </p>
 
-            <fb:comments href="{{ site.url }}{{ page.url }}" num_posts="{{ site.facebook.posts }}" width="{{ site.facebook.width }}"></fb:comments>
+            <div class="fb-comments"
+                data-href="{{ site.url }}{{ page.url }}"
+                data-numposts="{{ site.facebook.posts }}"
+                data-colorscheme="light"></div>
+
         </aside>
 
         {% include posts.html %}
