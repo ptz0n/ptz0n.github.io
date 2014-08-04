@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Optimizing your responsive images
+title: Optimize your responsive images
 description: Using smart tools to make images light without loosing (too much) details.
 lang: en
 ---
