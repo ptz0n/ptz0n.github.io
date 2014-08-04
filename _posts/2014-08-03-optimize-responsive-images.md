@@ -18,16 +18,16 @@ Remember to always save/upload the originals without any compression at all, eg.
 For this task I like to use [imgmin](https://github.com/rflynn/imgmin) to determine the optimal quality setting for any given image. Small file sizes _and_ minimal quality loss sure is a pleasure.
 
 <figure class="center">
-    <img src="/images/corgi-100.jpg" />
+    <img src="{{ site.url }}/images/corgi-100.jpg" />
     <figcaption>Before: 100 % / 227 KB</figcaption>
 </figure>
 
 <figure class="center">
-    <img src="/images/corgi-optimized.jpg" />
+    <img src="{{ site.url }}/images/corgi-optimized.jpg" />
     <figcaption>After: 95 % / 92.8 KB</figcaption>
 </figure>
 
 <figure class="center">
-    <img src="/images/corgi-75.jpg" />
+    <img src="{{ site.url }}/images/corgi-75.jpg" />
     <figcaption>Photoshop: 75 % / 94.6 KB</figcaption>
 </figure>
