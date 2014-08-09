@@ -3,6 +3,7 @@ layout: post
 title: Optimize your responsive images
 description: Using smart tools to make images light without loosing (too much) details.
 lang: en
+image: corgi-100.jpg
 ---
 
 __If you haven't already implemented a [responsive images solution](http://www.smashingmagazine.com/2013/07/08/choosing-a-responsive-image-solution/) for your sites that target mobile devices. Go ahead and do it, now.__
