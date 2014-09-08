@@ -5,7 +5,6 @@ language: sv-se
 
 author: "Erik Eng"
 email: mail@ptz0n.se
-github: ptz0n
 twitter: ptz0n
 dribbble: ptz0n
 google: "105380157389113696457"
@@ -28,4 +27,4 @@ future: false
 
 exclude: ["README.md", "config.rb", "404.html", "node_modules", "Gemfile", "Gruntfile.js", "package.json"]
 
-gems: ["jekyll-sitemap", "jekyll-redirect-from"]
+gems: ["jekyll-sitemap"]
