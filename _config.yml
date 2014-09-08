@@ -27,4 +27,4 @@ future: false
 
 exclude: ["README.md", "config.rb", "404.html", "node_modules", "Gemfile", "Gruntfile.js", "package.json"]
 
-gems: ["jekyll-sitemap"]
+gems: ["jekyll-sitemap", "jekyll-redirect-from"]
