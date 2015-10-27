@@ -10,9 +10,6 @@ Under åren har jag förvaltat ett gäng domäner. Det vore ju bättre om de kom
 ## Aktuella domäner
 
 * committa.se
-* forsenad.nu
-* försenad.nu
-* försenad.se
 * gatumusikanter.se
 * genomresa.se
 * kryckor.se
