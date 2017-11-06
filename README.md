@@ -1,6 +1,6 @@
 # Personal profile & blog
 
-Built with [Jekyll](https://github.com/mojombo/jekyll), hosted by Github.
+Crafted with [Jekyll](https://github.com/mojombo/jekyll), built and hosted by Github.
 
 ## Dependencies
 
