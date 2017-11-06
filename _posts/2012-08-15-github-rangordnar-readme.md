@@ -4,6 +4,8 @@ title: Hur GitHub rangordnar README-filer
 description: När du använder flera README-filer i repo-rooten eller undermappar på GitHub.
 ---
 
+__TLDR;__ Alfabetisk.
+
 Jag gillar [GitHub](https://github.com/), dels för smidig hosting av källkod men
 också för kollaborering och spridning av idéer. För tydlig presentation och
 dokumentation av projekt används README-filer. GitHub renderar dessa filer till HTML
@@ -23,8 +25,8 @@ Som tur är prioriterar GitHub `.md` före `.txt`, dock saknas dokumentation om 
 
 1. asciidoc
 2. creole
-3. md|mkdn?|mdwn|mdown|markdown ?
-4. mediawiki|wiki
+3. md\|mkdn?\|mdwn\|mdown\|markdown
+4. mediawiki\|wiki
 5. org
 6. pod
 7. rdoc
