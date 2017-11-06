@@ -4,7 +4,7 @@ description: "Öppen källkod och tillgänglig data gör dagen intressant och we
 language: sv-se
 
 author: "Erik Eng"
-email: mail@ptz0n.se
+email: erik@eng.se
 twitter: ptz0n
 dribbble: ptz0n
 google: "105380157389113696457"
@@ -27,4 +27,4 @@ future: false
 
 exclude: ["README.md", "config.rb", "404.html", "node_modules", "Gemfile", "Gruntfile.js", "package.json"]
 
-gems: ["jekyll-sitemap", "jekyll-redirect-from"]
+plugins: ["jekyll-sitemap", "jekyll-redirect-from"]
