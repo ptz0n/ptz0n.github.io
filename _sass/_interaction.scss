@@ -117,15 +117,11 @@ input[type=submit] {
     a {
         display: block;
         border: 0;
-        background: url('../images/icons.png');
         width: 32px;
         height: 32px;
         text-indent: -9999em;
-
-        @include respond-to(retina) {
-            background: url('../images/icons@2x.png');
-            background-size: 143px 32px;
-        }
+        background-position: center;
+        background-repeat: no-repeat;
 
         &:hover,
         &:focus,
@@ -134,28 +130,24 @@ input[type=submit] {
         }
     }
 
-    .dribbble {
-        background-position: -42px 0;
+    .twitter {
+        background-image: inline-image('../images/twitter.svg');
+    }
 
-        @include respond-to(retina) {
-            background-position: -37px 0;
-        }
+    .dribbble {
+        background-image: inline-image('../images/dribbble.svg');
     }
 
     .github {
-        background-position: -84px 0;
-
-        @include respond-to(retina) {
-            background-position: -74px 0;
-        }
+        background-image: inline-image('../images/github.svg');
     }
 
     .google {
-        background-position: -126px 0;
+        background-image: inline-image('../images/googleplus.svg');
+    }
 
-        @include respond-to(retina) {
-            background-position: -111px 0;
-        }
+    .instagram {
+        background-image: inline-image('../images/instagram.svg');
     }
 }
 
