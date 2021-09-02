@@ -21,7 +21,7 @@ Nedan har jag samlat vad jag haft för mig de senaste åren utan inbördes ordni
 * REST, GraphQL, gRPC
 * CI
 * Git
-* Photoshop, Sketch
+* Photoshop, Sketch, SketchUp
 
 ## Tjänster
 
@@ -32,11 +32,15 @@ Nedan har jag samlat vad jag haft för mig de senaste åren utan inbördes ordni
 * Fastly
 * GitHub
 * Imgix
-* Travis, CircleCI
+* GitHub Actions, Travis, CircleCI, BitBucket Pipelines
 
 ## Utvecklarroller
 
-### Diet Doctor 2018-
+### Daniel Wellington 2019-
+
+Utveckling och förvaltning av integrationer och interna verktyg.
+
+### Diet Doctor 2018-2019
 
 Förvaltning samt utveckling av microservices baserad på en monolit av affärslogik i WordPress.
 
@@ -50,6 +54,6 @@ Nyutveckling och förvaltning av e-handel, primärt på plattformen Magento.
 
 ## Övrigt
 
-Spenderar gärna tid med fru och barn, vindsurfing och renovering av vårt hus i Tullinge.
+Spenderar gärna tid med familjen och tidsenlig renovering av vårt hus i Tullinge.
 
 Hör gärna av dig om du vill veta mer. [erik@eng.se](mailto:erik@eng.se) / [073-021 30 72](tel:+46730213072)
