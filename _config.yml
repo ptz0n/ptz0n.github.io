@@ -23,8 +23,26 @@ permalink: /post/:title.html
 markdown: kramdown
 timezone: "Europe/Paris"
 
+paginate: 10
+paginate_path: "/page-:num/"
+
 future: false
 
-exclude: ["README.md", "config.rb", "404.html", "node_modules", "Gemfile", "Gruntfile.js", "package.json"]
+exclude:
+    - "README.md"
+    - "config.rb"
+    - "404.html"
+    - "node_modules"
+    - "Gemfile"
+    - "package.json"
+    - "package-lock.json"
+    - "Makefile"
+    - "migrate.js"
+    - "CNAME"
+    - "blogg_inlagg.json"
+    - "blogg_kategorier.json"
 
-plugins: ["jekyll-sitemap", "jekyll-redirect-from"]
+plugins:
+    - "jekyll-sitemap"
+    - "jekyll-redirect-from"
+    - "jekyll-paginate"

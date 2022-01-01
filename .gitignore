@@ -1,8 +1,8 @@
-.sass-cache
-.DS_Store
-ehthumbs.db
-Thumbs.db
-*.scssc
 _site/
-node_modules/
+.DS_Store
+.sass-cache
 *.lock
+*.scssc
+ehthumbs.db
+node_modules/
+Thumbs.db
