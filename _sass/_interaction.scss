@@ -97,15 +97,15 @@ nav[role=navigation] {
 button,
 .button,
 input[type=submit] {
-    @include inline-block();
+    display: inline-block;
     background: #ccc;
     color: #333;
     padding: .4em .8em;
     border: 1px solid #888;
     border-top-color: #999;
     border-bottom-color: #777;
-    @include border-radius(3px);
-    @include text-shadow(rgba(255, 255, 255, .4) 0 1px 0);
+    border-radius: 3px;
+    text-shadow: rgba(255, 255, 255, .4) 0 1px 0;
 
     &:hover,
     &:focus {
@@ -118,7 +118,7 @@ input[type=submit] {
 
 .links {
     li {
-        @include inline-block;
+        display: inline-block;
         margin-right: .5em;
     }
 
@@ -134,24 +134,24 @@ input[type=submit] {
         &:hover,
         &:focus,
         &:active {
-            @include opacity(0.7);
+            opacity: 0.7;
         }
     }
 
     .twitter {
-        background-image: inline-image('../images/twitter.svg');
+        background-image: url('../images/twitter.svg');
     }
 
     .dribbble {
-        background-image: inline-image('../images/dribbble.svg');
+        background-image: url('../images/dribbble.svg');
     }
 
     .github {
-        background-image: inline-image('../images/github.svg');
+        background-image: url('../images/github.svg');
     }
 
     .instagram {
-        background-image: inline-image('../images/instagram.svg');
+        background-image: url('../images/instagram.svg');
     }
 }
 
@@ -159,7 +159,7 @@ input[type=submit] {
     border: 1px solid #82a255;
     border-top-color: #8fb15f;
     border-bottom-color: #728f4a;
-    @include text-shadow(#728f4a 0 -1px 0);
+    text-shadow: #728f4a 0 -1px 0;
     background: #91bc5d;
     color: #fff;
     padding: .4em .8em;

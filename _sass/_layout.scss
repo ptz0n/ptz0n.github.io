@@ -65,8 +65,8 @@ html {
     }
 
     time {
+        display: inline-block;
         float: right;
-        @include inline-block();
         margin-left: 1em;
     }
 }
