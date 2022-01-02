@@ -1,5 +1,5 @@
 source: src
-ignore_theme_config: false
+theme: ""
 
 url: http://erikeng.se
 title: "Erik Eng utvecklar för webb &amp; mobilt"
