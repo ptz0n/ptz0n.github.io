@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div role="main">
+  <div class="content">
+    <article>
+      <h1>{% if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>
+      <time datetime="{{ page.date }}">{{ page.date | date:'%d %b %Y' | downcase }}</time>
+      {{ content }}
+    </article>
+
+    <aside>
+      <hr />
+      {% if page.lang == 'en' %}
+        <p>To comment on this post, please reach out to me on <a href="https://twitter.com/{{ site.twitter }}" class="twitter" rel="me">Twitter</a>.</p>
+      {% else %}
+        <p>För att kommentera det här inlägget, skriv till mig på <a href="https://twitter.com/{{ site.twitter }}" class="twitter" rel="me">Twitter</a>.</p>
+      {% endif %}
+    </aside>
+
+    {% if page.lang == 'en' %}
+      {% include posts-en.html %}
+    {% else %}
+      {% include posts.html %}
+    {% endif %}
+  </div>
+</div>
+
+{% include about.html %}

@@ -1,3 +1,5 @@
+source: src
+
 url: http://erikeng.se
 title: "Erik Eng utvecklar för webb &amp; mobilt"
 description: "Öppen källkod och tillgänglig data gör dagen intressant och webben bättre."
@@ -32,18 +34,7 @@ sass:
 future: false
 
 exclude:
-    - "README.md"
-    - "config.rb"
     - "404.html"
-    - "node_modules"
-    - "Gemfile"
-    - "package.json"
-    - "package-lock.json"
-    - "Makefile"
-    - "migrate.js"
-    - "CNAME"
-    - "blogg_inlagg.json"
-    - "blogg_kategorier.json"
 
 plugins:
     - "jekyll-sitemap"

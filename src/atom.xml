@@ -1,0 +1,33 @@
+---
+layout: null
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title>{{ site.title }}</title>
+    <link href="{{ site.url }}"/>
+    <link type="application/atom+xml" rel="self" href="{{ site.url }}/atom.xml"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>{{ site.url }}</id>
+    <author>
+        <name>{{ site.author }}</name>
+        <email>{{ site.email }}</email>
+    </author>
+
+    {% for post in site.posts %}
+        <entry>
+            <id>{{ site.url }}{{ post.id }}</id>
+            <link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url }}"/>
+            <link rel="payment" href="https://flattr.com/submit/auto?url={{ site.url | cgi_escape }}{{ post.url | cgi_escape }}&amp;user_id={{ site.flattr }}" type="text/html" />
+            <title>{{ post.title }}</title>
+            <published>{{ post.date | date_to_xmlschema }}</published>
+            <updated>{{ post.date | date_to_xmlschema }}</updated>
+            <author>
+                <name>{{ site.author }}</name>
+                <uri>{{ site.url }}</uri>
+            </author>
+            <content type="html">{{ post.content | xml_escape }}</content>
+        </entry>
+    {% endfor %}
+
+</feed>
