@@ -26,6 +26,9 @@ timezone: "Europe/Paris"
 paginate: 10
 paginate_path: "/page-:num/"
 
+sass:
+    style: compact
+
 future: false
 
 exclude:
