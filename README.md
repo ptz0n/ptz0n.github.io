@@ -5,4 +5,3 @@ Crafted with [Jekyll](https://github.com/mojombo/jekyll), built and hosted by Gi
 ## Dependencies
 
 * [Jekyll](https://github.com/mojombo/jekyll/)
-* [Compass](https://github.com/chriseppstein/compass/)
