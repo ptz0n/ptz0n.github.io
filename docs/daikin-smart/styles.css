@@ -1,0 +1,841 @@
+:root {
+  --color--blue: #428bca;
+  --color--indigo: #6610f2;
+  --color--purple: #6f42c1;
+  --color--pink: #e83e8c;
+  --color--red: #dc3545;
+  --color--orange: #fd7e14;
+  --color--yellow: #ffc107;
+  --color--green: #5cb85c;
+  --color--teal: #20c997;
+  --color--cyan: #17a2b8;
+  --color--white: #fff;
+  --color--gray: #6c757d;
+  --color--gray-dark: #484e54;
+  --color--daikin-lightblue: #54c3f1;
+  --color--daikin-blue: #4798c5;
+  --color--daikin-blue-primary: #0097e0;
+  --color--daikin-orange: #f54e00;
+  --color--gray-darker: #292c2f;
+  --color--gray: #515151;
+  --color--gray-light: #b4b4b4;
+  --color--gray-lighter: #e8e8e8;
+  --color--gray-lightest: #f5f5f5;
+  --color--white: #fff;
+  --color--white-a40: rgba(255, 255, 255, 0.4);
+  --color--white-a55: rgba(255, 255, 255, 0.55);
+  --color--white-a70: rgba(255, 255, 255, 0.7);
+  --color--white-smoke-a95: rgba(250, 250, 250, 0.95);
+  --color--black: #000;
+  --color--black-a03: rgba(0, 0, 0, 0.03);
+  --color--black-a05: rgba(0, 0, 0, 0.05);
+  --color--black-a15: rgba(0, 0, 0, 0.15);
+  --color--black-a40: rgba(0, 0, 0, 0.4);
+  --color--link: #0097e0;
+  --color--daikin-blue-primary-hover: #0086c7;
+  --color--gray-dark-hover: #4f565c;
+  --color--gray-light-hover: #8e8e8e;
+  --color--white-hover: #f2f2f2;
+  --color--link-hover: #0086c7
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('https://d1azc1qln24ryf.cloudfront.net/186965/DaikinInternet/icomoon.eot?5ibil3');
+  src:  url('https://d1azc1qln24ryf.cloudfront.net/186965/DaikinInternet/icomoon.eot?5ibil3#iefix') format('embedded-opentype'),
+    url('https://d1azc1qln24ryf.cloudfront.net/186965/DaikinInternet/icomoon.woff2?5ibil3') format('woff2'),
+    url('https://d1azc1qln24ryf.cloudfront.net/186965/DaikinInternet/icomoon.ttf?5ibil3') format('truetype'),
+    url('https://d1azc1qln24ryf.cloudfront.net/186965/DaikinInternet/icomoon.woff?5ibil3') format('woff'),
+    url('https://d1azc1qln24ryf.cloudfront.net/186965/DaikinInternet/icomoon.svg?5ibil3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Formstack:before {
+  content: "\e900";
+}
+.icon-Compact:before {
+  content: "\e9b2";
+}
+.icon-icon-circular-economy:before {
+  content: "\e9af";
+}
+.icon-icon-higher-property:before {
+  content: "\e9b0";
+}
+.icon-icon-risk-free:before {
+  content: "\e9b1";
+}
+.icon-image_fingerprint_HR_22Kb:before {
+  content: "\e9a2";
+}
+.icon-Icoon-Rooftop-software:before {
+  content: "\e9a1";
+}
+.icon-DAIKIN_H_CMYK:before {
+  content: "\e99f";
+}
+.icon-floorwarming:before {
+  content: "\e99a";
+}
+.icon-heatboost:before {
+  content: "\e99b";
+}
+.icon-heatplus:before {
+  content: "\e99c";
+}
+.icon-LEAD_MANAGEMENT-01:before {
+  content: "\e904";
+}
+.icon-LogoExpertConfortHabitatQ:before {
+  content: "\e902";
+}
+.icon-dk_logo_R2S_quadri:before {
+  content: "\e903";
+}
+.icon-picto-BIM:before {
+  content: "\e90a";
+}
+.icon-picto-ech:before {
+  content: "\e90b";
+}
+.icon-picto-r2s:before {
+  content: "\e90c";
+}
+.icon-Insulation-excellent:before {
+  content: "\e906";
+}
+.icon-Insulation-Normal:before {
+  content: "\e907";
+}
+.icon-Insulation-Poor:before {
+  content: "\e908";
+}
+.icon-Room-size:before {
+  content: "\e909";
+}
+.icon-Icon_Seminar-Platform_2:before {
+  content: "\e905";
+}
+.icon-Picto_virtual-showroom_DEF_bw:before {
+  content: "\e901";
+}
+.icon-Picto_virtual-showroom_DEF_Blue_bw:before {
+  content: "\e90d";
+}
+.icon-Factory_Visits:before {
+  content: "\e90e";
+}
+.icon-D1-D1-CI:before {
+  content: "\e989";
+}
+.icon-Loyalty:before {
+  content: "\e985";
+}
+.icon-logo_kununu_clean_pos:before {
+  content: "\e9a0";
+}
+.icon-SH-Network_logo_vertical_RGB:before {
+  content: "\e986";
+}
+.icon-SHNetwork_logo_horizontal_RGB:before {
+  content: "\e987";
+}
+.icon-award_first1:before {
+  content: "\e984";
+}
+.icon-SPP_BLUE:before {
+  content: "\e8f2";
+}
+.icon-ASSET_BLUE:before {
+  content: "\e8f4";
+}
+.icon-APPLICATIONS_BLUE:before {
+  content: "\e8f3";
+}
+.icon-CAMPAIGN_BLUE:before {
+  content: "\e8f5";
+}
+.icon-COURSE_BLUE:before {
+  content: "\e8f6";
+}
+.icon-ENERGY_BLUE:before {
+  content: "\e8f7";
+}
+.icon-ESV_BLUE:before {
+  content: "\e8f8";
+}
+.icon-FAQ_BLUE:before {
+  content: "\e8f9";
+}
+.icon-NEWS_BLUE:before {
+  content: "\e8fa";
+}
+.icon-PRODUCT_BLUE:before {
+  content: "\e8fb";
+}
+.icon-REFERENCE_BLUE:before {
+  content: "\e8fc";
+}
+.icon-SERVICE-INFO_BLUE:before {
+  content: "\e8fd";
+}
+.icon-SOFTWARE_BLUE:before {
+  content: "\e8fe";
+}
+.icon-WWW_BLUE:before {
+  content: "\e8ff";
+}
+.icon-BIM_print:before {
+  content: "\e90f";
+}
+.icon-Daikin_D1_Plus_Logo_Main_RGB-02:before {
+  content: "\e910";
+}
+.icon-Daikin_D1_Logo_Main_RGB-02:before {
+  content: "\e911";
+}
+.icon-Daikin_Ci_Only_Logo_RGB_Black-01:before {
+  content: "\e912";
+}
+.icon-Daikin_Ci_Logo_Main_RGB_Black-01:before {
+  content: "\e913";
+}
+.icon-Daikin_Ci_Logo_Installer_RGB_Black-01:before {
+  content: "\e914";
+}
+.icon-Daikin_KEY_Logo_Colour:before {
+  content: "\e915";
+}
+.icon-Daikin_KEY_Logo_Colour_NoStrap:before {
+  content: "\e916";
+}
+.icon-DK_icon_daikin_ID_blue:before {
+  content: "\e917";
+}
+.icon-testsDK:before {
+  content: "\e98f";
+}
+.icon-application-catalogue-all-08:before {
+  content: "\e918";
+}
+.icon-application-catalogue-all-10:before {
+  content: "\e919";
+}
+.icon-application-catalogue-all-05:before {
+  content: "\e91a";
+}
+.icon-application-catalogue-all-01:before {
+  content: "\e91b";
+}
+.icon-application-catalogue-all-02:before {
+  content: "\e91c";
+}
+.icon-application-catalogue-all-03:before {
+  content: "\e91d";
+}
+.icon-application-catalogue-all-04:before {
+  content: "\e91e";
+}
+.icon-application-catalogue-all-06:before {
+  content: "\e91f";
+}
+.icon-application-catalogue-all-09:before {
+  content: "\e920";
+}
+.icon-leaves:before {
+  content: "\e921";
+}
+.icon-secure:before {
+  content: "\e922";
+}
+.icon-sign:before {
+  content: "\e923";
+}
+.icon-temperature:before {
+  content: "\e924";
+}
+.icon-sun:before {
+  content: "\e925";
+}
+.icon-person:before {
+  content: "\e926";
+}
+.icon-arrow-right:before {
+  content: "\e927";
+}
+.icon-arrow-left:before {
+  content: "\e928";
+}
+.icon-ventilation:before {
+  content: "\e929";
+}
+.icon-air-purification:before {
+  content: "\e92a";
+}
+.icon-plus:before {
+  content: "\e92b";
+}
+.icon-MaximumComfort:before {
+  content: "\e92c";
+}
+.icon-HotWaterApplications:before {
+  content: "\e92d";
+}
+.icon-Fresh-Hot-Water:before {
+  content: "\e92e";
+}
+.icon-LowTemperature_og:before {
+  content: "\e92f";
+}
+.icon-AirPurification:before {
+  content: "\e930";
+}
+.icon-AirToAir:before {
+  content: "\e931";
+}
+.icon-BiddleAirCurtain:before {
+  content: "\e932";
+}
+.icon-Chillers:before {
+  content: "\e933";
+}
+.icon-Cooling:before {
+  content: "\e934";
+}
+.icon-DomesticHotWaterHeatpump:before {
+  content: "\e935";
+}
+.icon-EnergyEfficiency:before {
+  content: "\e936";
+}
+.icon-DomesticHotWater:before {
+  content: "\e937";
+}
+.icon-GasCondensing:before {
+  content: "\e938";
+}
+.icon-RadiantHeatGreige:before {
+  content: "\e939";
+}
+.icon-Refrigeration:before {
+  content: "\e93a";
+}
+.icon-SkyAir:before {
+  content: "\e93b";
+}
+.icon-Ventilation:before {
+  content: "\e93c";
+}
+.icon-VRV:before {
+  content: "\e93d";
+}
+.icon-IntelligentControlSystems:before {
+  content: "\e93e";
+}
+.icon-hour_timer:before {
+  content: "\e93f";
+}
+.icon-energy_saving_during_standby_mode:before {
+  content: "\e940";
+}
+.icon-whisper_quiet:before {
+  content: "\e941";
+}
+.icon-AirHandlingUnit:before {
+  content: "\e942";
+}
+.icon-Shop:before {
+  content: "\e943";
+}
+.icon-noDisturbance:before {
+  content: "\e944";
+}
+.icon-peaceofmind:before {
+  content: "\e945";
+}
+.icon-Whisperquiet:before {
+  content: "\e946";
+}
+.icon-Bestdesignandfunctionality:before {
+  content: "\e947";
+}
+.icon-lowerCost:before {
+  content: "\e948";
+}
+.icon-GroundToWater:before {
+  content: "\e949";
+}
+.icon-HeatingCooling:before {
+  content: "\e94a";
+}
+.icon-Heating:before {
+  content: "\e94b";
+}
+.icon-HighQuality:before {
+  content: "\e94c";
+}
+.icon-HighTemperature_og:before {
+  content: "\e94d";
+}
+.icon-HybridHeatPump:before {
+  content: "\e94e";
+}
+.icon-IntelligentControlSystems_1:before {
+  content: "\e94f";
+}
+.icon-OilCondensing:before {
+  content: "\e950";
+}
+.icon-Photocatalytic-deodorising-filter:before {
+  content: "\e951";
+}
+.icon-Area-Reservata-DACI:before {
+  content: "\e952";
+}
+.icon-Training:before {
+  content: "\e953";
+}
+.icon-replacementTechnology:before {
+  content: "\e954";
+}
+.icon-DK_icon_business_portal:before {
+  content: "\e955";
+}
+.icon-DK_icon_leafletgenerator_blue:before {
+  content: "\e956";
+}
+.icon-DK_icon_selectionsoftware_blue:before {
+  content: "\e957";
+}
+.icon-Rooftop-application_Icon-02:before {
+  content: "\e958";
+}
+.icon-auto-cooling-heating-changeover:before {
+  content: "\e959";
+}
+.icon-auto-fan-speed:before {
+  content: "\e95a";
+}
+.icon-auto-cleaning-filter:before {
+  content: "\e95b";
+}
+.icon-draught-prevention:before {
+  content: "\e95c";
+}
+.icon-dry-programme:before {
+  content: "\e95d";
+}
+.icon-econo-mode:before {
+  content: "\e95e";
+}
+.icon-energy-saving-during-operation-standby:before {
+  content: "\e95f";
+}
+.icon-fan-only:before {
+  content: "\e960";
+}
+.icon-fan-speed-steps:before {
+  content: "\e961";
+}
+.icon-flash-streamer1:before {
+  content: "\e962";
+}
+.icon-floor-presence-sensor:before {
+  content: "\e963";
+}
+.icon-free-cooling:before {
+  content: "\e964";
+}
+.icon-Guaranteed-operation-down-to--25C:before {
+  content: "\e965";
+}
+.icon-Guarenteed-operation-down-to--20C:before {
+  content: "\e966";
+}
+.icon-home-leave-operation:before {
+  content: "\e967";
+}
+.icon-horizontal-auto-swing:before {
+  content: "\e968";
+}
+.icon-individual-flap-control:before {
+  content: "\e969";
+}
+.icon-indoor-unit-silent-operation:before {
+  content: "\e96a";
+}
+.icon-infrared-remote-control:before {
+  content: "\e96b";
+}
+.icon-infrastructure-cooling:before {
+  content: "\e96c";
+}
+.icon-inverter:before {
+  content: "\e96d";
+}
+.icon-movement-sensor:before {
+  content: "\e96e";
+}
+.icon-multi-model1:before {
+  content: "\e96f";
+}
+.icon-multi-tenant:before {
+  content: "\e970";
+}
+.icon-multizoning:before {
+  content: "\e971";
+}
+.icon-night-quiet-mode:before {
+  content: "\e972";
+}
+.icon-night-set-mode:before {
+  content: "\e973";
+}
+.icon-outdoor-silent-operation:before {
+  content: "\e974";
+}
+.icon-powerful-mode:before {
+  content: "\e975";
+}
+.icon-practically-inaudible:before {
+  content: "\e976";
+}
+.icon-radiant-heat:before {
+  content: "\e977";
+}
+.icon-reciprocating-compressor:before {
+  content: "\e978";
+}
+.icon-sarara-dehumidification:before {
+  content: "\e979";
+}
+.icon-screw-compressor:before {
+  content: "\e97a";
+}
+.icon-scroll-compressor:before {
+  content: "\e97b";
+}
+.icon-seasonal-efficiency:before {
+  content: "\e97c";
+}
+.icon-seasonal-efficiency2:before {
+  content: "\e97d";
+}
+.icon-self-diagnosis:before {
+  content: "\e97e";
+}
+.icon-silver-allergen-removal-and-air-purifying-filter:before {
+  content: "\e97f";
+}
+.icon-Swing-compressor:before {
+  content: "\e980";
+}
+.icon-whisper-quiet1:before {
+  content: "\e981";
+}
+.icon-wired-remote-control:before {
+  content: "\e982";
+}
+.icon-PRODUCT_BLACK_SQUARE:before {
+  content: "\e983";
+}
+.icon-smart-use-of-energy:before {
+  content: "\e988";
+}
+.icon-Picto_NewConstruction-1:before {
+  content: "\e98a";
+}
+.icon-area-intelligent-eye:before {
+  content: "\e98b";
+}
+.icon-whisper-quiet:before {
+  content: "\e98c";
+}
+.icon-ururu-humidification:before {
+  content: "\e98d";
+}
+.icon-Renovation:before {
+  content: "\e98e";
+}
+.icon-underfloor-heating:before {
+  content: "\e990";
+}
+.icon-RENOVATION:before {
+  content: "\e991";
+}
+.icon-NEW_BUILT:before {
+  content: "\e992";
+}
+.icon-multi-model:before {
+  content: "\e993";
+}
+.icon-inverter_picto_draft:before {
+  content: "\e994";
+}
+.icon-room-model:before {
+  content: "\e995";
+}
+.icon-showroom:before {
+  content: "\e996";
+}
+.icon-cercle:before {
+  content: "\e997";
+}
+.icon-award_first:before {
+  content: "\e998";
+}
+.icon-impossible-to-hear:before {
+  content: "\e999";
+}
+.icon-Grid-eye-sensor:before {
+  content: "\e99d";
+}
+.icon-inverter_NOTXT:before {
+  content: "\e99e";
+}
+.icon-Floorstanding-unit:before {
+  content: "\e9a3";
+}
+.icon-online_controller_picto:before {
+  content: "\e9a4";
+}
+.icon-picto_solarpanel:before {
+  content: "\e9a5";
+}
+.icon-sarara-dehumidification_NOTXT:before {
+  content: "\e9a6";
+}
+.icon-self-cleaning_filter:before {
+  content: "\e9a7";
+}
+.icon-flash-streamer:before {
+  content: "\e9a8";
+}
+.icon-ururu-humidification_NOTXT:before {
+  content: "\e9a9";
+}
+.icon-wall_mounted:before {
+  content: "\e9aa";
+}
+.icon-flash-streamer_NOTXT:before {
+  content: "\e9ab";
+}
+.icon-energy-efficiency:before {
+  content: "\e9ac";
+}
+.icon-down-to--25C:before {
+  content: "\e9ad";
+}
+.icon-air-purification-filter:before {
+  content: "\e9ae";
+}
+.icon-area-intelligent-eye_groen:before {
+  content: "\e9b5";
+}
+.icon-select_VRV_app:before {
+  content: "\e9b6";
+}
+.icon-select_CTV_app:before {
+  content: "\e9b7";
+}
+.icon-select_Altherma_app:before {
+  content: "\e9b8";
+}
+.icon-multisplit:before {
+  content: "\e9b9";
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Open Sans",sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #515151;
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  position: relative;
+  margin: 0.75rem 0;
+  list-style: none;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+li::before {
+  content: "";
+  width: 0.3125rem;
+  height: 0.3125rem;
+  border-radius: 100%;
+  background: #54c3f1;
+  display: block;
+  position: absolute;
+  left: -1.125rem;
+  top: 0.6875rem;
+}
+
+p, h1, h2, h3 {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h1, h2, h3 {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  padding-bottom: 0.625rem;
+  word-break: break-word;
+  color: #0097e0;
+}
+
+h1 {
+  color: currentColor;
+  margin-bottom: 0.625rem;
+  margin-top: 0.625rem;
+
+  font-size: 2rem;
+  line-height: 1.125;
+  font-weight: 300;
+  margin-top: 1.25rem;
+  margin-bottom: 1.875rem;
+
+  margin-block-start: 1em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.125;
+  font-weight: 300;
+  margin-top: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.125;
+  font-weight: 300;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+}
+
+.light,
+.brand,
+.dark {
+  overflow: hidden;
+}
+
+.light h2,
+.light h3 {
+  color: currentColor;
+}
+
+.light {
+  background-color: #f5f5f5;
+}
+
+.dark h2,
+.dark h3,
+.brand h2,
+.brand h3 {
+  color: #fff;
+}
+
+.dark {
+  background-color: #484e54;
+  color: #fff;
+}
+
+.brand {
+  background-color: #0097e0;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 800px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+a {
+  font-weight: 700;
+  color: #0097e0;
+  transition: color .15s linear;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+.button {
+  background-color: #f54e00;
+  border-color: #fff;
+  color: #fff;
+  border: 2px solid;
+  display: inline-block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 0.9375rem;
+  margin: 0.9375rem 0;
+  max-width: 100%;
+  padding: 0.9375rem 1.5625rem;
+  text-align: center;
+  text-shadow: none;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: baseline;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.button,
+.button:hover
+.button:focus {
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #f54e00;
+  border-color: #f54e00;
+  box-shadow: 0 5px 16px -5px rgb(0 0 0 / 30%);
+}
