@@ -18,6 +18,7 @@ facebook:
     admins: "516158352"
 analytics:
     profile: "33567818"
+    gtm: "RP460ZJLPP"
 
 permalink: /post/:title.html
 markdown: kramdown
