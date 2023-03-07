@@ -9,7 +9,7 @@ install:
 
 serve:
 	rvm use 2.7
-	bundle exec jekyll serve --drafts
+	bundle exec jekyll serve --drafts --source docs
 
 lighthouse:
 	npx lighthouse --view http://localhost:4000
