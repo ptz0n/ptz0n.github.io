@@ -753,6 +753,14 @@ h3 {
   margin-bottom: 0.625rem;
 }
 
+h4 {
+  font-size: 1rem;
+  line-height: 1.125;
+  font-weight: 300;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
 .light,
 .brand,
 .dark {
@@ -770,8 +778,10 @@ h3 {
 
 .dark h2,
 .dark h3,
+.dark h4,
 .brand h2,
-.brand h3 {
+.brand h3,
+.brand h4 {
   color: #fff;
 }
 
@@ -827,15 +837,10 @@ a:focus {
   word-break: break-word;
 }
 
-.button,
-.button:hover
-.button:focus {
-  text-decoration: none;
-}
-
 .button:hover,
 .button:focus {
   background-color: #f54e00;
   border-color: #f54e00;
   box-shadow: 0 5px 16px -5px rgb(0 0 0 / 30%);
+  text-decoration: none;
 }
