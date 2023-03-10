@@ -667,7 +667,7 @@ html, body {
 
 body {
   font-size: 100%;
-  font-family: "Open Sans",sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #515151;
@@ -703,7 +703,7 @@ li::before {
   top: 0.6875rem;
 }
 
-p, h1, h2, h3 {
+#chart, p, h1, h2, h3 {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
