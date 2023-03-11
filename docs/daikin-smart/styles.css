@@ -703,11 +703,17 @@ li::before {
   top: 0.6875rem;
 }
 
-#chart, p, h1, h2, h3 {
+p, h1, h2, h3 {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+#chart {
+  margin-block-start: 1em;
+  width: 100%;
+  aspect-ratio: auto 2 / 1;
 }
 
 h1, h2, h3 {
