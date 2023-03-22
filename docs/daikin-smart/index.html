@@ -1,3 +1,6 @@
+---
+
+---
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
@@ -6,7 +9,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
   <meta name="theme-color" content="#0097e0">
   <link rel="stylesheet" href="styles.css" type="text/css">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta property="og:image" content="https://erikeng.se/daikin-smart/daikin-smart-timpris.png">
   <meta property="og:url" content="https://erikeng.se/daikin-smart/">
   <link rel="canonical" href="https://erikeng.se/daikin-smart/">
@@ -264,45 +267,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
   <script>
-    const prices = [
-      { time: '2023-03-09T00:00:00+01:00', value: 1.28623 },
-      { time: '2023-03-09T01:00:00+01:00', value: 1.26054 },
-      { time: '2023-03-09T02:00:00+01:00', value: 1.25635 },
-      { time: '2023-03-09T03:00:00+01:00', value: 1.23779 },
-      { time: '2023-03-09T04:00:00+01:00', value: 1.25861 },
-      { time: '2023-03-09T05:00:00+01:00', value: 1.27898 },
-      { time: '2023-03-09T06:00:00+01:00', value: 1.56099 },
-      { time: '2023-03-09T07:00:00+01:00', value: 1.78902 },
-      { time: '2023-03-09T08:00:00+01:00', value: 1.85748 },
-      { time: '2023-03-09T09:00:00+01:00', value: 1.74997 },
-      { time: '2023-03-09T10:00:00+01:00', value: 1.61101 },
-      { time: '2023-03-09T11:00:00+01:00', value: 1.49162 },
-      { time: '2023-03-09T12:00:00+01:00', value: 1.38061 },
-      { time: '2023-03-09T13:00:00+01:00', value: 1.3178 },
-      { time: '2023-03-09T14:00:00+01:00', value: 1.31486 },
-      { time: '2023-03-09T15:00:00+01:00', value: 1.32085 },
-      { time: '2023-03-09T16:00:00+01:00', value: 1.33941 },
-      { time: '2023-03-09T17:00:00+01:00', value: 1.53734 },
-      { time: '2023-03-09T18:00:00+01:00', value: 1.66601 },
-      { time: '2023-03-09T19:00:00+01:00', value: 1.64134 },
-      { time: '2023-03-09T20:00:00+01:00', value: 1.52885 },
-      { time: '2023-03-09T21:00:00+01:00', value: 1.41557 },
-      { time: '2023-03-09T22:00:00+01:00', value: 1.33319 },
-      { time: '2023-03-09T23:00:00+01:00', value: 1.23281 }
-    ]
-      .map(({ time: x, value: y }) => ({ x, y: Math.round(y*100) }))
-
-    const energy = [
-      { x: '2023-03-09T01:00:00.000+01:00', y: 5 },
-      { x: '2023-03-09T03:00:00.000+01:00', y: 11 },
-      { x: '2023-03-09T05:00:00.000+01:00', y: 7 },
-      { x: '2023-03-09T07:00:00.000+01:00', y: 2 },
-      { x: '2023-03-09T13:00:00.000+01:00', y: 8 },
-      { x: '2023-03-09T15:00:00.000+01:00', y: 12 },
-      { x: '2023-03-09T19:00:00.000+01:00', y: 1 },
-      { x: '2023-03-09T21:00:00.000+01:00', y: 3 },
-      { x: '2023-03-09T23:00:00.000+01:00', y: 7 }
-    ]
+    const metrics = {"energy":[{"time":"2023-03-15T00:00:00.000Z","value":1},{"time":"2023-03-15T02:00:00.000Z","value":10},{"time":"2023-03-15T04:00:00.000Z","value":5},{"time":"2023-03-15T06:00:00.000Z","value":2},{"time":"2023-03-15T08:00:00.000Z","value":4},{"time":"2023-03-15T10:00:00.000Z","value":1},{"time":"2023-03-15T12:00:00.000Z","value":6},{"time":"2023-03-15T14:00:00.000Z","value":1},{"time":"2023-03-15T18:00:00.000Z","value":1},{"time":"2023-03-15T20:00:00.000Z","value":3},{"time":"2023-03-15T22:00:00.000Z","value":6}],"prices":[{"time":"2023-03-15T00:00:00+01:00","value":0.67787},{"time":"2023-03-15T01:00:00+01:00","value":0.64524},{"time":"2023-03-15T02:00:00+01:00","value":0.64513},{"time":"2023-03-15T03:00:00+01:00","value":0.64547},{"time":"2023-03-15T04:00:00+01:00","value":0.62281},{"time":"2023-03-15T05:00:00+01:00","value":0.64842},{"time":"2023-03-15T06:00:00+01:00","value":1.2787},{"time":"2023-03-15T07:00:00+01:00","value":1.54462},{"time":"2023-03-15T08:00:00+01:00","value":1.68455},{"time":"2023-03-15T09:00:00+01:00","value":1.26477},{"time":"2023-03-15T10:00:00+01:00","value":1.17005},{"time":"2023-03-15T11:00:00+01:00","value":0.68048},{"time":"2023-03-15T12:00:00+01:00","value":0.60196},{"time":"2023-03-15T13:00:00+01:00","value":0.57522},{"time":"2023-03-15T14:00:00+01:00","value":0.68003},{"time":"2023-03-15T15:00:00+01:00","value":1.0384},{"time":"2023-03-15T16:00:00+01:00","value":1.1449},{"time":"2023-03-15T17:00:00+01:00","value":1.22443},{"time":"2023-03-15T18:00:00+01:00","value":1.26024},{"time":"2023-03-15T19:00:00+01:00","value":1.24098},{"time":"2023-03-15T20:00:00+01:00","value":1.1926},{"time":"2023-03-15T21:00:00+01:00","value":1.19033},{"time":"2023-03-15T22:00:00+01:00","value":0.92532},{"time":"2023-03-15T23:00:00+01:00","value":0.82607}]};
 
     // https://www.chartjs.org/docs/latest/samples/advanced/linear-gradient.html
     let width, height, gradient;
@@ -337,7 +302,8 @@
           {
             type: 'bar',
             label: 'Förbrukning',
-            data: energy,
+            data: metrics.energy
+              .map(({ time: x, value: y }) => ({ x, y })),
             borderWidth: 0,
             backgroundColor: 'rgba(202, 68, 51, 1)',
             borderRadius: {
@@ -350,7 +316,8 @@
           {
             type: 'line',
             label: 'Elpris',
-            data: prices,
+            data: metrics.prices
+              .map(({ time: x, value: y }) => ({ x, y: Math.round(y*100) })),
             fill: false,
             stepped: true,
             pointHoverRadius: 6,
@@ -423,7 +390,7 @@
               drawOnChartArea: false
             },
             ticks: {
-              callback: (value) => new Date(value).toISOString().substring(11,13)
+              callback: (value) => new Date(value).toString().substring(16, 18)
             }
           },
           energy: {
@@ -439,7 +406,7 @@
               callback: (value) => `${value} kWh`,
               stepSize: (input) => Math.round(input.scale.max / 3)
             },
-            suggestedMax: energy.reduce((max, { y }) => Math.max(max, y), 0) * 1.2
+            suggestedMax: metrics.energy.reduce((max, { value }) => Math.max(max, value), 0) * 1.2
           },
           price: {
             type: 'linear',
