@@ -36,16 +36,33 @@
 
       <p>Med en värmepump från <strong>Daikin</strong> kombinerat med timprisavtal på el från tillex. <a href="https://tibber.com/se/invite/fb7a2cc5" title="Elbolaget Tibber">Tibber</a> har du alla förutsättningar.</p>
 
-      <p>Du behöver varken <a href="https://ngenic.se/">Ngenic</a> eller vara kund hos ett specifikt elbolag.</p>
+      <p>D.v.s du behöver ingen ytterligare hårdvara som <a href="https://ngenic.se/">Ngenic</a> eller vara kund hos ett specifikt elbolag.</p>
     </div>
   </section>
 
   <div class="wrapper">
+    <h3>
+      <span class="icon-smart-use-of-energy" aria-hidden="true"></span>
+      Senaste 48 timmarna
+    </h3>
+
     <canvas id="chart"></canvas>
+
+    <div class="metrics">
+      <div class="box">
+        <h4>Besparing</h4>
+        <p><span id="savings">0.0</span> %</p>
+      </div>
+
+      <div class="box">
+        <h4>Förbrukning</h4>
+        <p><span id="consumtion">0</span> kWh</p>
+      </div>
+    </div>
 
     <h3>
       <span class="icon-lowerCost" aria-hidden="true"></span>
-      Styr din värmepump efter elpriset
+      Optimera din värmepump mot elpriset
     </h3>
 
     <p>Den här tilläggstjänsten gör din värmepump från Daikin smart genom att använda energi under den period på dygnet när elpriset är som lägst.</p>
@@ -270,6 +287,23 @@
     const fetchMetrics = async () => {
       const response = await fetch('https://d3qhojbpnd45u2.cloudfront.net/test.json');
       const { energy, prices } = await response.json();
+
+      const totalConsumtion = energy.reduce((sum, { value }) => sum + value, 0);
+      document.getElementById('consumtion').innerHTML = totalConsumtion;
+
+      const totalCost = energy.reduce((sum, { time, value }) => {
+        const energyTime = new Date(time).getTime();
+        return sum + value * prices.find(
+          (price) => new Date(price.time).getTime() === energyTime
+        ).value;
+      }, 0);
+
+      const averagePrice = prices.reduce((a, { value }) => a + value, 0) / prices.length;
+      const averagePriceCost = totalConsumtion * averagePrice;
+
+      const savings = (1 - totalCost / averagePriceCost) * 100;
+
+      document.getElementById('savings').innerHTML = Math.round(savings * 10) / 10;
 
       chart.data.datasets[0].data = energy
         .map(({ time: x, value: y }) => ({ x, y }));
