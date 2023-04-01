@@ -287,11 +287,15 @@
     const fetchMetrics = async () => {
       const response = await fetch('https://d3qhojbpnd45u2.cloudfront.net/test.json');
       const { energy, prices } = await response.json();
+      const shiftedEnergy = energy.map(({ time, value }) => ({
+        time: new Date(new Date(time).getTime() - 1000 * 3600).toISOString(),
+        value,
+      }))
 
-      const totalConsumtion = energy.reduce((sum, { value }) => sum + value, 0);
+      const totalConsumtion = shiftedEnergy.reduce((sum, { value }) => sum + value, 0);
       document.getElementById('consumtion').innerHTML = totalConsumtion;
 
-      const totalCost = energy.reduce((sum, { time, value }) => {
+      const totalCost = shiftedEnergy.reduce((sum, { time, value }) => {
         const energyTime = new Date(time).getTime();
         return sum + value * prices.find(
           (price) => new Date(price.time).getTime() === energyTime
@@ -305,7 +309,7 @@
 
       document.getElementById('savings').innerHTML = Math.round(savings * 10) / 10;
 
-      chart.data.datasets[0].data = energy
+      chart.data.datasets[0].data = shiftedEnergy
         .map(({ time: x, value: y }) => ({ x, y }));
       chart.data.datasets[1].data = prices
         .map(({ time: x, value: y }) => ({ x, y: Math.round(y*100) }))
@@ -313,14 +317,6 @@
       chart.stop();
       chart.update('none');
     };
-
-    const fetchPrices = () => fetchMetrics().then(({ prices }) =>
-      prices.map(({ time: x, value: y }) => ({ x, y: Math.round(y*100) }))
-    );
-
-    const fetchEnergy = () => fetchMetrics().then(({ energy }) => {
-      energy.map(({ time: x, value: y }) => ({ x, y }))
-    });
 
     // https://www.chartjs.org/docs/latest/samples/advanced/linear-gradient.html
     let width, height, gradient;
