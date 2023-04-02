@@ -703,7 +703,7 @@ li::before {
   top: 0.6875rem;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, .columns {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -717,20 +717,23 @@ p, h1, h2, h3 {
   margin-bottom: 1em;
 }
 
-.metrics {
+.columns {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.box {
-  text-align: center;
+.metric {
   width: 50%;
   background: #f5f5f5;
   padding: 1em;
 }
 
-.box p {
+.metric {
+  text-align: center;
+}
+
+.metric p {
   font-size: 2rem;
   margin: 0;
 }

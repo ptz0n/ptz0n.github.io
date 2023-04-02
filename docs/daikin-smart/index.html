@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Daikin Smart - följer elpriset timme för timme</title>
-  <meta name="description" content="Med en värmepump från Daikin kombinerat med timprisavtal på el från tillex. Tibber har du alla förutsättningar. Du behöver varken Ngenic eller vara kund hos ett specifikt elbolag.">
+  <meta name="description" content="Med en värmepump från Daikin kombinerat med timprisavtal på el från t.ex. Tibber har du alla förutsättningar. Du behöver varken Ngenic eller vara kund hos ett specifikt elbolag.">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
   <meta name="theme-color" content="#0097e0">
   <link rel="stylesheet" href="styles.css" type="text/css">
@@ -48,13 +48,13 @@
 
     <canvas id="chart"></canvas>
 
-    <div class="metrics">
-      <div class="box">
+    <div class="columns">
+      <div class="metric">
         <h4>Besparing</h4>
         <p><span id="savings">0.0</span> %</p>
       </div>
 
-      <div class="box">
+      <div class="metric">
         <h4>Förbrukning</h4>
         <p><span id="consumtion">0</span> kWh</p>
       </div>
@@ -81,7 +81,27 @@
 
     <p>Värmepumpen agerar kostnadseffektivt genom att värma varmvattnet i tanken när elpriset är som lägst och undvika timmarna när elpriset är som högst.</p>
 
-    <p><a href="mailto:erik@eng.se?subject=Daikin smart" class="button">Förfrågan via e-post</a></p>
+    <h3>
+      <span class="icon-IntelligentControlSystems_1" aria-hidden="true"></span>
+      Full kontroll
+    </h3>
+    <p>Du väljer själv via ONECTA-appen om det optimerade schemat ska vara aktiverat.</p>
+
+    <h2>Kom igång direkt</h2>
+
+    <div class="columns">
+      <div class="metric">
+        <h4>Per månad</h4>
+        <p>50 kr</p>
+        <p><a href="https://buy.stripe.com/cN28yX02CcGF76w9AC" class="button">Välj</a></p>
+      </div>
+
+      <div class="metric">
+        <h4>Per år</h4>
+        <p>480 kr</p>
+        <p><a href="https://buy.stripe.com/dR6g1p5mW221cqQ4gh" class="button">Välj</a></p>
+      </div>
+    </div>
   </div>
 
   <section class="dark">
@@ -279,6 +299,7 @@
   </section>
 
   <div class="wrapper">
+    <p>Tjänsten tillhandahålls av <a href="mailto:erik@eng.se">Erik Eng</a>.</p>
     <p>Daikin, Tibber & Ngenic är varumärken som ägs av respektive bolag.</p>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -299,7 +320,7 @@
         const energyTime = new Date(time).getTime();
         return sum + value * prices.find(
           (price) => new Date(price.time).getTime() === energyTime
-        ).value;
+        )?.value || 0;
       }, 0);
 
       const averagePrice = prices.reduce((a, { value }) => a + value, 0) / prices.length;
