@@ -738,6 +738,10 @@ p, h1, h2, h3, .columns {
   margin: 0;
 }
 
+.center {
+  text-align: center;
+}
+
 h1, h2, h3 {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
