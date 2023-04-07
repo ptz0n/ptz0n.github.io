@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'sv' }}">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  {% if page.robots -%}
+    <meta name="robots" content="{{ page.robots }}">
+  {%- endif %}
+  <meta name="description" content="{{ page.description }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+  <meta name="theme-color" content="#0097e0">
+  <link rel="stylesheet" href="{{ site.url }}/daikin-smart/styles.css" type="text/css">
+  <link rel="shortcut icon" href="/daikin-smart/favicon.ico" type="image/x-icon">
+  <meta property="og:image" content="{{ site.url }}/daikin-smart/daikin-smart-timpris.png">
+  <meta property="og:url" content="{{ site.url }}{% unless page.url == '/index.html' %}{{ page.url }}{% endunless %}">
+  <link rel="canonical" href="{{ site.url }}{% unless page.url == '/index.html' %}{{ page.url }}{% endunless %}">
+  <meta property="og:site_name" content="Daikin Smart">
+  <meta property="twitter:creator" content="{{ site.twitter }}">
+  {% comment %}
+    {% for hreflang in page.hreflang -%}
+      <link rel="alternate" hreflang="{{ hreflang[0] }}" href="{{ site.url }}{{ hreflang[1] }}" />
+    {%- endfor %}
+  {% endcomment %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-{{ site.analytics.gtm }}"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-{{ site.analytics.gtm }}');
+  </script>
+</head>
+<body>
+  {{ content }}
+</body>
+</html>

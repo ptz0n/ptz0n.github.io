@@ -1,0 +1,5 @@
+<nav>
+  {% for hreflang in page.hreflang %}
+    <a href="{{ hreflang[1] }}" class="locale">{{ hreflang[0] | upcase }}</a>
+  {% endfor %}
+</nav>

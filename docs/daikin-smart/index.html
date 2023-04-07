@@ -1,499 +1,342 @@
 ---
-
+layout: daikin
+title: Daikin Smart - följer elpriset timme för timme
+description: Med en värmepump från Daikin kombinerat med timprisavtal på el från t ex Tibber har du alla förutsättningar. Du behöver varken Ngenic eller vara kund hos ett specifikt elbolag.
+lang: sv
+hreflang:
+  en: /daikin-smart/en/
 ---
-<!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <title>Daikin Smart - följer elpriset timme för timme</title>
-  <meta name="description" content="Med en värmepump från Daikin kombinerat med timprisavtal på el från t ex Tibber har du alla förutsättningar. Du behöver varken Ngenic eller vara kund hos ett specifikt elbolag.">
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-  <meta name="theme-color" content="#0097e0">
-  <link rel="stylesheet" href="styles.css" type="text/css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <meta property="og:image" content="https://erikeng.se/daikin-smart/daikin-smart-timpris.png">
-  <meta property="og:url" content="https://erikeng.se/daikin-smart/">
-  <link rel="canonical" href="https://erikeng.se/daikin-smart/">
-  <meta property="og:site_name" content="Daikin Smart">
-  <meta property="twitter:creator" content="ptz0n">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RP460ZJLPP"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RP460ZJLPP');
-  </script>
-</head>
-<body>
-  <section class="brand">
-    <div class="wrapper">
-      <h1>Daikin Smart</h1>
-    </div>
-  </section>
 
-  <section class="light">
-    <div class="wrapper">
-      <h2 class="cmp-teaser__title">Gör din värmepump smartare</h2>
-
-      <p>Med en värmepump från <strong>Daikin</strong> kombinerat med timprisavtal på el från tillex. <a href="https://tibber.com/se/invite/fb7a2cc5" title="Elbolaget Tibber">Tibber</a> har du alla förutsättningar.</p>
-
-      <p>Du behöver ingen ytterligare hårdvara som Ngenic eller vara kund hos ett specifikt elbolag.</p>
-    </div>
-  </section>
-
+<section class="brand">
   <div class="wrapper">
-    <h3>
-      <span class="icon-smart-use-of-energy" aria-hidden="true"></span>
-      Senaste 48 timmarna
-    </h3>
+    <h1>Daikin Smart</h1>
+    {% comment %}
+      {% include daikin-nav.html %}
+    {% endcomment %}
+  </div>
+</section>
 
-    <canvas id="chart"></canvas>
+<section class="light">
+  <div class="wrapper">
+    <h2 class="cmp-teaser__title">Gör din värmepump smartare</h2>
 
-    <div class="columns">
-      <div class="metric">
-        <h4>Besparing</h4>
-        <p><span id="savings">0.0</span> %</p>
-      </div>
+    <!-- 1. Highlight main benefits -->
+    <!-- 2. Use simple language -->
+    <!-- 3. Provide concrete examples; how much can I save? -->
+    <!-- 4. Address customer pain points - Stop keeping a close eye on the hourly prices and adjust the heating, let this service do it for you. -->
+    <!-- 5. Address customer pain points -->
+    <!-- . Add testamonials -->
 
-      <div class="metric">
-        <h4>Förbrukning</h4>
-        <p><span id="consumtion">0</span> kWh</p>
-      </div>
+    <p>Med en värmepump från <strong>Daikin</strong> och ett timprisavtal på el från t ex <a href="https://tibber.com/se/invite/fb7a2cc5" rel="nofollow" title="Elbolaget Tibber">Tibber</a> har du alla förutsättningar.</p>
+
+    <p>Du behöver ingen ytterligare hårdvara eller vara kund hos ett specifikt elbolag.</p>
+  </div>
+</section>
+
+<div class="wrapper">
+  <h3>
+    <span class="icon-smart-use-of-energy" aria-hidden="true"></span>
+    Senaste 48 timmarna
+  </h3>
+
+  <canvas id="chart"></canvas>
+
+  <div class="columns">
+    <div class="metric">
+      <h4>Besparing</h4>
+      <p><span id="savings">0.0</span> %</p>
     </div>
 
-    <h3>
-      <span class="icon-lowerCost" aria-hidden="true"></span>
-      Optimera din värmepump mot elpriset
-    </h3>
-
-    <p>Den här tilläggstjänsten gör din värmepump från Daikin smart genom att använda energi under de perioder på dygnet då elpriset är som lägst.</p>
-
-    <h3>
-      <span class="icon-MaximumComfort" aria-hidden="true"></span>
-      Maximal komfort
-    </h3>
-
-    <p>Genom att ständigt kontrollera utom- & inomhustemperaturen kan värmepumpen arbeta effektivt med bibehållen komfort i din bostad.</p>
-
-    <h3 class="cmp-teaser__title">
-      <span class="icon-DomesticHotWater" aria-hidden="true"></span>
-      Varmvatten vid rätt tid efter behov
-    </h3>
-
-    <p>Värmepumpen agerar kostnadseffektivt genom att värma varmvattnet i tanken när elpriset är som lägst och undvika timmarna när elpriset är som högst.</p>
-
-    <h3>
-      <span class="icon-IntelligentControlSystems_1" aria-hidden="true"></span>
-      Full kontroll
-    </h3>
-    <p>Du väljer själv via ONECTA-appen om det optimerade schemat ska vara aktiverat.</p>
-
-    <h2>Kom igång direkt</h2>
-
-    <div class="columns">
-      <div class="metric">
-        <h4>Per månad</h4>
-        <p>50 kr</p>
-        <p><a href="https://buy.stripe.com/cN28yX02CcGF76w9AC" class="button">Välj</a></p>
-      </div>
-
-      <div class="metric">
-        <h4>Per år</h4>
-        <p>480 kr</p>
-        <p><a href="https://buy.stripe.com/dR6g1p5mW221cqQ4gh" class="button">Välj</a></p>
-      </div>
+    <div class="metric">
+      <h4>Förbrukning</h4>
+      <p><span id="consumtion">0</span> kWh</p>
     </div>
-
-    <p class="center">Ingen bindningstid, du kan när som helst avsluta tjänsten.</p>
   </div>
 
-  <section class="dark">
-    <div class="wrapper">
-      <h2>Anslutningsbara enheter</h2>
+  <h3>
+    <span class="icon-lowerCost" aria-hidden="true"></span>
+    Optimera din värmepump mot elpriset
+  </h3>
 
-      <p>Verifiera genom att fjärrstyra din värmepump med Daikins mobilapp ONECTA (tidigare Residential Controller).</p>
+  <p>Den här tilläggstjänsten gör din värmepump från Daikin smart genom att använda energi under de perioder på dygnet då elpriset är som lägst.</p>
 
-      <h3>WLAN-adapter inbyggt i enheten</h3>
+  <h3>
+    <span class="icon-MaximumComfort" aria-hidden="true"></span>
+    Maximal komfort
+  </h3>
 
-      <ul>
-        <li>CTXA-AW</li>
-        <li>CTXA-BS</li>
-        <li>CTXA-BT</li>
-        <li>CTXA-BB</li>
-        <li>FTXA-AW</li>
-        <li>FTXA-BS</li>
-        <li>FTXA-BT</li>
-        <li>FTXA-BB</li>
-        <li>CTXM-R</li>
-        <li>FTXM-R</li>
-        <li>CVXM-R</li>
-        <li>FVXM-A</li>
-        <li>ATXM-R</li>
-        <li>FTXJ-AW</li>
-        <li>FTXJ-AS</li>
-        <li>FTXJ-AB</li>
-        <li>FTXTA-BW</li>
-        <li>FTXTA-BB</li>
-        <li>FTXTM-R</li>
-        <li>FTXTP-M</li>
-      </ul>
+  <p>Genom att ständigt kontrollera utom- & inomhustemperaturen kan värmepumpen arbeta effektivt med bibehållen komfort i din bostad.</p>
 
-      <h3>BRP069A81</h3>
+  <h3 class="cmp-teaser__title">
+    <span class="icon-DomesticHotWater" aria-hidden="true"></span>
+    Varmvatten vid rätt tid efter behov
+  </h3>
 
-      <ul>
-        <li>FCAHG-G</li>
-        <li>FCAG-A</li>
-        <li>FFA-A</li>
-        <li>FDXM-F3</li>
-        <li>FBA-A</li>
-        <li>FDA-A</li>
-        <li>ADEQ-C</li>
-        <li>FAA-A</li>
-        <li>FHA-A</li>
-        <li>FUA-A</li>
-        <li>FVA-A</li>
-        <li>FNA-A</li>
-      </ul>
+  <p>Värmepumpen agerar kostnadseffektivt genom att värma varmvattnet i tanken när elpriset är som lägst och undvika timmarna när elpriset är som högst.</p>
 
-      <h3>BRP069B41</h3>
+  <h3>
+    <span class="icon-IntelligentControlSystems_1" aria-hidden="true"></span>
+    Full kontroll
+  </h3>
+  <p>Du väljer själv via ONECTA-appen om det optimerade schemat ska vara aktiverat.</p>
 
-      <ul>
-        <li>FTXM-M</li>
-        <li>CTXM-M</li>
-        <li>ATXM-M</li>
-        <li>FTXTM-M</li>
-        <li>BRP069A45</li>
-        <li>FTXG-LS</li>
-        <li>FTXG-LW</li>
-        <li>FTXJ-MW *</li>
-        <li>FTXJ-MS *</li>
-      </ul>
+  <h3>
+    <span class="icon-SERVICE-INFO_BLUE" aria-hidden="true"></span>
+    All historik samlad
+  </h3>
+  <p>Inställningar, temperaturer och scheman. Allt finns sparat för att vid behov bättre kunna förstå förbrukningsmönster eller identifiera problem med din värmepump.</p>
 
-      <p>* styrenhet, medföljer enheten</p>
+  <h2>Kom igång direkt</h2>
 
-      <h3>BRP069B42</h3>
-
-      <ul>
-        <li>FTXZ-N</li>
-        <li>FTXS35-42-50K</li>
-        <li>FTXS60-71G</li>
-        <li>FTX50-60-71GV</li>
-        <li>FTXLS-K3</li>
-        <li>FVXG-K</li>
-        <li>FVXS-F</li>
-        <li>FLXS-B</li>
-        <li>FLXS-B9</li>
-        <li>ATXS35-50K</li>
-        <li>FVXM-F</li>
-      </ul>
-
-      <h3>BRP069B43</h3>
-
-      <ul>
-        <li>CTXS15-35K</li>
-        <li>FTXS20-25K</li>
-        <li>FTX20-25-35J3</li>
-        <li>FTXL-JV</li>
-        <li>ATXS20-25K</li>
-        <li>ATX-J3</li>
-        <li>ATXL-JV</li>
-      </ul>
-
-      <h3>BRP069B45</h3>
-
-      <ul>
-        <li>FTX20-25-35KV</li>
-        <li>FTX50-60KV</li>
-        <li>ATX-KV</li>
-        <li>FTXP-L</li>
-        <li>ATXP-L</li>
-        <li>FTXF-A</li>
-        <li>FTXTP-K</li>
-        <li>ATXTP-K</li>
-      </ul>
-
-      <h3>BRP069A61/62</h3>
-
-      <h4>Daikin Altherma GEO</h4>
-
-      <ul>
-        <li>EGSQH-A9W</li>
-      </ul>
-
-      <h4>Daikin Altherma 3 GEO</h4>
-
-      <ul>
-        <li>EGSA(H/X)-D9W</li>
-      </ul>
-
-      <h4>Daikin Altherma H Hybrid</h4>
-
-      <ul>
-        <li>EHY2KOMB-A</li>
-      </ul>
-
-      <p>Daikin Altherma R Hybrid</p>
-
-      <ul>
-        <li>EHYHB(H/X)-AV3(2)</li>
-      </ul>
-
-      <h4>Daikin Altherma R</h4>
-
-      <ul>
-        <li>EHBH(X)-CB</li>
-        <li>EHVH(H/X/Z)-CB</li>
-      </ul>
-
-      <h4>Daikin Altherma 3 R</h4>
-
-      <ul>
-        <li>EHB(H/X)-D</li>
-        <li>EHV(H/X/Z)-D</li>
-        <li>EHF(H/Z)-D</li>
-      </ul>
-
-      <h4>Daikin Altherma 3 H</h4>
-
-      <ul>
-        <li>EAB(H/X)-D</li>
-        <li>EAV(H/X/Z)-D</li>
-      </ul>
-
-      <h4>Daikin Altherma 3 H HT</h4>
-
-      <ul>
-        <li>ETB(H/X)-D</li>
-        <li>ETV(H/X/Z)-D</li>
-      </ul>
-
-      <h4>Daikin Altherma M</h4>
-
-      <ul>
-        <li>EBLQ-CV3</li>
-        <li>EDLQ-CV3</li>
-      </ul>
-
-      <h3>BRP069A71</h3>
-
-      <h4>Daikin Altherma 3 R (tillval)</h4>
-
-      <ul>
-        <li>EHB(H/X)-E</li>
-        <li>EHV(H/X/Z)-E</li>
-      </ul>
-
-      <h3>BRP069A78</h3>
-
-      <h4>Daikin Altherma 3 R</h4>
-
-      <ul>
-        <li>EHB(H/X)-E</li>
-        <li>EHV(H/X/Z)-E</li>
-      </ul>
-
-      <h4>Daikin Altherma 3 M (tillval)</h4>
-
-      <ul>
-        <li>EBLA09-16D(3)V3/W1</li>
-        <li>EDLA09-16D(3)V3/W1</li>
-      </ul>
+  <div class="columns">
+    <div class="metric">
+      <h4>Per månad</h4>
+      <p>50 kr</p>
+      <p><a
+        id="select-monthly"
+        title="Betala per månad"
+        href="https://buy.stripe.com/cN28yX02CcGF76w9AC?utm_content=monthly"
+        rel="nofollow"
+        class="button">Välj</a></p>
     </div>
-  </section>
 
-  <div class="wrapper">
-    <p>Tjänsten tillhandahålls av <a href="mailto:erik@eng.se">Erik Eng</a>.</p>
-    <p>Daikin, Tibber & Ngenic är varumärken som ägs av respektive bolag.</p>
+    <div class="metric">
+      <h4>Per år</h4>
+      <p>480 kr</p>
+      <p><a
+        id="select-yearly"
+        title="Betala per år"
+        href="https://buy.stripe.com/dR6g1p5mW221cqQ4gh?utm_content=yearly"
+        rel="nofollow"
+        class="button">Välj</a></p>
+    </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
-  <script>
-    const fetchMetrics = async () => {
-      const response = await fetch('https://d3qhojbpnd45u2.cloudfront.net/test.json');
-      const { energy, prices } = await response.json();
-      const shiftedEnergy = energy.map(({ time, value }) => ({
-        time: new Date(new Date(time).getTime() - 1000 * 3600).toISOString(),
-        value,
-      }))
 
-      const totalConsumtion = shiftedEnergy.reduce((sum, { value }) => sum + value, 0);
-      document.getElementById('consumtion').innerHTML = totalConsumtion;
+  <p class="center">Ingen bindningstid, du kan när som helst avsluta tjänsten.</p>
+</div>
 
-      const totalCost = shiftedEnergy.reduce((sum, { time, value }) => {
-        const energyTime = new Date(time).getTime();
-        return sum + value * prices.find(
-          (price) => new Date(price.time).getTime() === energyTime
-        )?.value || 0;
-      }, 0);
+<section class="dark">
+  <div class="wrapper">
+    <h2>Anslutningsbara enheter</h2>
 
-      const averagePrice = prices.reduce((a, { value }) => a + value, 0) / prices.length;
-      const averagePriceCost = totalConsumtion * averagePrice;
+    <p>Verifiera genom att fjärrstyra din värmepump med Daikins mobilapp ONECTA (tidigare Residential Controller).</p>
 
-      const savings = (1 - totalCost / averagePriceCost) * 100;
+    <h3>WLAN-adapter inbyggt i enheten</h3>
 
-      document.getElementById('savings').innerHTML = Math.round(savings * 10) / 10;
+    <ul>
+      <li>CTXA-AW</li>
+      <li>CTXA-BS</li>
+      <li>CTXA-BT</li>
+      <li>CTXA-BB</li>
+      <li>FTXA-AW</li>
+      <li>FTXA-BS</li>
+      <li>FTXA-BT</li>
+      <li>FTXA-BB</li>
+      <li>CTXM-R</li>
+      <li>FTXM-R</li>
+      <li>CVXM-R</li>
+      <li>FVXM-A</li>
+      <li>ATXM-R</li>
+      <li>FTXJ-AW</li>
+      <li>FTXJ-AS</li>
+      <li>FTXJ-AB</li>
+      <li>FTXTA-BW</li>
+      <li>FTXTA-BB</li>
+      <li>FTXTM-R</li>
+      <li>FTXTP-M</li>
+    </ul>
 
-      chart.data.datasets[0].data = shiftedEnergy
-        .map(({ time: x, value: y }) => ({ x, y }));
-      chart.data.datasets[1].data = prices
-        .map(({ time: x, value: y }) => ({ x, y: Math.round(y*100) }))
+    <h3>BRP069A81</h3>
 
-      chart.stop();
-      chart.update('none');
+    <ul>
+      <li>FCAHG-G</li>
+      <li>FCAG-A</li>
+      <li>FFA-A</li>
+      <li>FDXM-F3</li>
+      <li>FBA-A</li>
+      <li>FDA-A</li>
+      <li>ADEQ-C</li>
+      <li>FAA-A</li>
+      <li>FHA-A</li>
+      <li>FUA-A</li>
+      <li>FVA-A</li>
+      <li>FNA-A</li>
+    </ul>
+
+    <h3>BRP069B41</h3>
+
+    <ul>
+      <li>FTXM-M</li>
+      <li>CTXM-M</li>
+      <li>ATXM-M</li>
+      <li>FTXTM-M</li>
+      <li>BRP069A45</li>
+      <li>FTXG-LS</li>
+      <li>FTXG-LW</li>
+      <li>FTXJ-MW *</li>
+      <li>FTXJ-MS *</li>
+    </ul>
+
+    <p>* styrenhet, medföljer enheten</p>
+
+    <h3>BRP069B42</h3>
+
+    <ul>
+      <li>FTXZ-N</li>
+      <li>FTXS35-42-50K</li>
+      <li>FTXS60-71G</li>
+      <li>FTX50-60-71GV</li>
+      <li>FTXLS-K3</li>
+      <li>FVXG-K</li>
+      <li>FVXS-F</li>
+      <li>FLXS-B</li>
+      <li>FLXS-B9</li>
+      <li>ATXS35-50K</li>
+      <li>FVXM-F</li>
+    </ul>
+
+    <h3>BRP069B43</h3>
+
+    <ul>
+      <li>CTXS15-35K</li>
+      <li>FTXS20-25K</li>
+      <li>FTX20-25-35J3</li>
+      <li>FTXL-JV</li>
+      <li>ATXS20-25K</li>
+      <li>ATX-J3</li>
+      <li>ATXL-JV</li>
+    </ul>
+
+    <h3>BRP069B45</h3>
+
+    <ul>
+      <li>FTX20-25-35KV</li>
+      <li>FTX50-60KV</li>
+      <li>ATX-KV</li>
+      <li>FTXP-L</li>
+      <li>ATXP-L</li>
+      <li>FTXF-A</li>
+      <li>FTXTP-K</li>
+      <li>ATXTP-K</li>
+    </ul>
+
+    <h3>BRP069A61/62</h3>
+
+    <h4>Daikin Altherma GEO</h4>
+
+    <ul>
+      <li>EGSQH-A9W</li>
+    </ul>
+
+    <h4>Daikin Altherma 3 GEO</h4>
+
+    <ul>
+      <li>EGSA(H/X)-D9W</li>
+    </ul>
+
+    <h4>Daikin Altherma H Hybrid</h4>
+
+    <ul>
+      <li>EHY2KOMB-A</li>
+    </ul>
+
+    <p>Daikin Altherma R Hybrid</p>
+
+    <ul>
+      <li>EHYHB(H/X)-AV3(2)</li>
+    </ul>
+
+    <h4>Daikin Altherma R</h4>
+
+    <ul>
+      <li>EHBH(X)-CB</li>
+      <li>EHVH(H/X/Z)-CB</li>
+    </ul>
+
+    <h4>Daikin Altherma 3 R</h4>
+
+    <ul>
+      <li>EHB(H/X)-D</li>
+      <li>EHV(H/X/Z)-D</li>
+      <li>EHF(H/Z)-D</li>
+    </ul>
+
+    <h4>Daikin Altherma 3 H</h4>
+
+    <ul>
+      <li>EAB(H/X)-D</li>
+      <li>EAV(H/X/Z)-D</li>
+    </ul>
+
+    <h4>Daikin Altherma 3 H HT</h4>
+
+    <ul>
+      <li>ETB(H/X)-D</li>
+      <li>ETV(H/X/Z)-D</li>
+    </ul>
+
+    <h4>Daikin Altherma M</h4>
+
+    <ul>
+      <li>EBLQ-CV3</li>
+      <li>EDLQ-CV3</li>
+    </ul>
+
+    <h3>BRP069A71</h3>
+
+    <h4>Daikin Altherma 3 R (tillval)</h4>
+
+    <ul>
+      <li>EHB(H/X)-E</li>
+      <li>EHV(H/X/Z)-E</li>
+    </ul>
+
+    <h3>BRP069A78</h3>
+
+    <h4>Daikin Altherma 3 R</h4>
+
+    <ul>
+      <li>EHB(H/X)-E</li>
+      <li>EHV(H/X/Z)-E</li>
+    </ul>
+
+    <h4>Daikin Altherma 3 M (tillval)</h4>
+
+    <ul>
+      <li>EBLA09-16D(3)V3/W1</li>
+      <li>EDLA09-16D(3)V3/W1</li>
+    </ul>
+  </div>
+</section>
+
+<div class="wrapper">
+  <p>Tjänsten tillhandahålls av <a href="mailto:erik@eng.se">Erik Eng</a>.</p>
+  <p>Daikin, Tibber & Ngenic är varumärken som ägs av respektive bolag.</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script src="{{ site.url }}/daikin-smart/scripts.js"></script>
+<script>
+  const selectPlan = (e) => {
+    const plan = e.target.id.replace('select-', '');
+    const { price, item_name } = e.target.id.replace('select-', '') === 'monthly'
+      ? { price: 50, item_name: 'Monthly' }
+      : { price: 480, item_name: 'Yearly' }
+
+    const event = {
+      item_list_id: 'daikin-smart-plans',
+      item_list_name: 'Daikin Smart Plans',
+      currency: 'SEK',
+      items: [{
+        item_id: `daikin-smart-${plan}`,
+        item_name,
+        price,
+      }],
     };
 
-    // https://www.chartjs.org/docs/latest/samples/advanced/linear-gradient.html
-    let width, height, gradient;
-    function getGradient(ctx, chartArea) {
-      const chartWidth = chartArea.right - chartArea.left;
-      const chartHeight = chartArea.bottom - chartArea.top;
-      if (!gradient || width !== chartWidth || height !== chartHeight) {
-        // Create the gradient because this is either the first render
-        // or the size of the chart has changed.
-        width = chartWidth;
-        height = chartHeight;
-        gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
-        gradient.addColorStop(0, 'rgb(0, 206, 165)') // app: rgb(92, 202, 167)
-        gradient.addColorStop(0.5, 'rgb(255, 211, 52)')
-        gradient.addColorStop(1, 'rgb(224, 95, 9)') // app: rgb(229, 158, 82)
-      }
+    gtag('event', 'select_item', event);
+  };
 
-      return gradient;
-    }
-
-    Chart.defaults.font = {
-      family: '"Open Sans", sans-serif',
-      size: 16,
-      lineHeight: 1.5
-    }
-    Chart.defaults.color = '#515151'
-
-    const chart = new Chart(document.getElementById('chart'), {
-      type: 'scatter',
-      data: {
-        datasets: [
-          {
-            type: 'bar',
-            label: 'Förbrukning',
-            borderWidth: 0,
-            backgroundColor: 'rgba(202, 68, 51, 1)',
-            borderRadius: {
-              topLeft: 4,
-              topRight: 4
-            },
-            yAxisID: 'energy',
-            order: 1
-          },
-          {
-            type: 'line',
-            label: 'Elpris',
-            fill: false,
-            stepped: true,
-            pointHoverRadius: 6,
-            pointHoverBorderWidth: 12,
-            borderColor: function(context) {
-              const chart = context.chart;
-              const {ctx, chartArea} = chart;
-
-              if (!chartArea) {
-                // This case happens on initial chart load
-                return;
-              }
-              return getGradient(ctx, chartArea);
-            },
-            pointBorderWidth: 0,
-            yAxisID: 'price',
-            order: 0
-          }
-        ],
-      },
-      options: {
-        normalized: true,
-        plugins: {
-          tooltip: {
-            callbacks: {
-              label: (context) => {
-                const { yAxisID: axis } = context.dataset
-                const { y: value } = context.parsed
-
-                if (axis === 'price') {
-                  return `${value} öre`
-                }
-
-                if (axis === 'energy') {
-                  return `${value} kWh`
-                }
-              }
-            },
-            padding: {
-              top: 15,
-              bottom: 15,
-              left: 25,
-              right: 25
-            },
-            displayColors: false,
-            titleAlign: 'center',
-            bodyAlign: 'center'
-          },
-          legend: {
-            display: false
-          }
-        },
-        interaction: {
-          mode: 'nearest',
-          intersect: false,
-          axis: 'x'
-        },
-        elements: {
-          point: {
-            radius: 0
-          }
-        },
-        scales: {
-          x: {
-            type: 'time',
-            time: {
-              tooltipFormat: 'HH:mm'
-            },
-            grid: {
-              drawOnChartArea: false
-            },
-            ticks: {
-              callback: (value) => new Date(value).toString().substring(16, 18)
-            }
-          },
-          energy: {
-            beginAtZero: true,
-            type: 'linear',
-            display: true,
-            position: 'left',
-            grid: {
-              tickWidth: false
-            },
-            ticks: {
-              padding: 0,
-              callback: (value) => `${value} kWh`,
-              stepSize: (input) => Math.round(input.scale.max / 3)
-            },
-            // suggestedMax: metrics.energy.reduce((max, { value }) => Math.max(max, value), 0) * 1.2
-          },
-          price: {
-            type: 'linear',
-            display: true,
-            position: 'right',
-            grid: {
-              display: false
-            },
-            ticks: {
-              padding: 0,
-              callback: (value) => `${value} öre`,
-              stepSize: (input) => Math.round(input.scale.max / 3)
-            },
-          }
-        }
-      }
-    });
-
-    fetchMetrics();
-  </script>
-</body>
-</html>
+  document.getElementById('select-yearly').addEventListener('click', selectPlan);
+  document.getElementById('select-monthly').addEventListener('click', selectPlan);
+</script>
