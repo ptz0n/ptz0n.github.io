@@ -1,10 +1,17 @@
 const fetchMetrics = async () => {
-  const response = await fetch('https://d3qhojbpnd45u2.cloudfront.net/test.json');
+  const { hash, pathname } = document.location;
+  const id = hash.replace(/^#/, '') || 'test';
+  const response = await fetch(`https://d3qhojbpnd45u2.cloudfront.net/${id}.json`);
+
+  if (pathname.match('dashboard') && !response.ok) {
+    window.location = '/daikin-smart/';
+  }
+
   const { energy, prices } = await response.json();
   const shiftedEnergy = energy.map(({ time, value }) => ({
     time: new Date(new Date(time).getTime() - 1000 * 3600).toISOString(),
     value,
-  }))
+  }));
 
   const totalConsumtion = shiftedEnergy.reduce((sum, { value }) => sum + value, 0);
   document.getElementById('consumtion').innerHTML = totalConsumtion;
@@ -36,14 +43,6 @@ const fetchMetrics = async () => {
     .map(({ time: x, value: y }) => ({ x, y: Math.round(y * 100) }));
 
   new Chart(document.getElementById('chart'), chartConfig);
-
-  // chart.data.datasets[0].data = shiftedEnergy
-  //   .map(({ time: x, value: y }) => ({ x, y }));
-  // chart.data.datasets[1].data = prices
-  //   .map(({ time: x, value: y }) => ({ x, y: Math.round(y*100) }))
-
-  // chart.stop();
-  // chart.update('none');
 };
 
 // https://www.chartjs.org/docs/latest/samples/advanced/linear-gradient.html

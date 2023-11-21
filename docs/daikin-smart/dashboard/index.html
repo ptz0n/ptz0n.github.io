@@ -1,0 +1,44 @@
+---
+layout: daikin
+title: Daikin smart dashboard
+lang: sv
+robots: noinex
+---
+
+<section class="brand">
+  <div class="wrapper">
+    <h1>Daikin smart schema</h1>
+    {% comment %}
+      {% include daikin-nav.html %}
+    {% endcomment %}
+  </div>
+</section>
+
+<div class="wrapper">
+  <h3>
+    <span class="icon-smart-use-of-energy" aria-hidden="true"></span>
+    Senaste 48 timmarna
+  </h3>
+
+  <canvas id="chart"></canvas>
+
+  <div class="columns">
+    <div class="metric">
+      <h4>Besparing</h4>
+      <p><span id="savings">0.0</span> %</p>
+    </div>
+
+    <div class="metric">
+      <h4>Förbrukning</h4>
+      <p><span id="consumtion">0</span> kWh</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <p>Tjänsten tillhandahålls av <a href="mailto:erik@eng.se">Erik Eng</a>.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script src="{{ site.url }}/daikin-smart/scripts.js"></script>
