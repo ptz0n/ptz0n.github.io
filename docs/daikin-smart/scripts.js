@@ -21,7 +21,10 @@ const fetchMetrics = async () => {
 
   const savings = (1 - totalCost / averagePriceCost) * 100;
 
-  document.getElementById('savings').innerHTML = Math.round(savings * 10) / 10;
+  document.getElementById('savings').innerHTML = Math.max(
+    Math.round(savings * 10) / 10,
+    0,
+  );
 
   chartConfig.data.datasets[0].data = shiftedEnergy
     .map(({ time: x, value: y }) => ({ x, y }));
