@@ -28,6 +28,9 @@ const fetchMetrics = async () => {
 
   chartConfig.data.datasets[0].data = shiftedEnergy
     .map(({ time: x, value: y }) => ({ x, y }));
+  chartConfig.options.scales.energy.suggestedMax = Math.round(
+    Math.max(...shiftedEnergy.map(({ value }) => value)) * 1.5
+  );
 
   chartConfig.data.datasets[1].data = prices
     .map(({ time: x, value: y }) => ({ x, y: Math.round(y * 100) }));
@@ -178,7 +181,6 @@ const chartConfig = {
           callback: (value) => `${value} kWh`,
           stepSize: (input) => Math.round(input.scale.max / 3)
         },
-        // suggestedMax: metrics.energy.reduce((max, { value }) => Math.max(max, value), 0) * 1.2
       },
       price: {
         type: 'linear',
