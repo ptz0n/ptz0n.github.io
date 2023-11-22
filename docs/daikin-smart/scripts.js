@@ -14,7 +14,8 @@ const fetchMetrics = async () => {
   }));
 
   const totalConsumtion = shiftedEnergy.reduce((sum, { value }) => sum + value, 0);
-  document.getElementById('consumtion').innerHTML = totalConsumtion;
+  const totalConsumtionRounded = Math.round((totalConsumtion + Number.EPSILON) * 100) / 100;
+  document.getElementById('consumtion').innerHTML = totalConsumtionRounded;
 
   const totalCost = shiftedEnergy.reduce((sum, { time, value }) => {
     const energyTime = new Date(time).getTime();
