@@ -8,8 +8,9 @@ const fetchMetrics = async () => {
   }
 
   const { energy, prices } = await response.json();
+  // TODO: Use timezone offset?
   const shiftedEnergy = energy.map(({ time, value }) => ({
-    time: new Date(new Date(time).getTime() - 1000 * 3600).toISOString(),
+    time: new Date(new Date(time).getTime() + 1000 * 3600).toISOString(),
     value,
   }));
 
