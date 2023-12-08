@@ -20,9 +20,11 @@ const fetchMetrics = async () => {
 
   const totalCost = shiftedEnergy.reduce((sum, { time, value }) => {
     const energyTime = new Date(time).getTime();
-    return sum + value * prices.find(
-      (price) => new Date(price.time).getTime() === energyTime
-    )?.value || 0;
+
+    const energyPrice = prices
+      .find((price) => new Date(price.time).getTime() === energyTime)
+
+    return sum + value * (energyPrice?.value || 0);
   }, 0);
 
   const averagePrice = prices.reduce((a, { value }) => a + value, 0) / prices.length;
