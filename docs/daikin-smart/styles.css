@@ -710,7 +710,8 @@ p, h1, h2, h3, .columns {
   margin-inline-end: 0px;
 }
 
-#chart {
+#chart,
+.chart {
   display: block;
   width: 100%;
   aspect-ratio: auto 2 / 1;

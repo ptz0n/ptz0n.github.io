@@ -7,7 +7,7 @@ const fetchMetrics = async () => {
     window.location = '/daikin-smart/';
   }
 
-  const { energy, prices } = await response.json();
+  const { energy, prices, temps } = await response.json();
   // TODO: Use timezone offset?
   const shiftedEnergy = energy.map(({ time, value }) => ({
     time: new Date(new Date(time).getTime() + 1000 * 3600).toISOString(),
@@ -37,6 +37,8 @@ const fetchMetrics = async () => {
     0,
   );
 
+  const chartConfig = getChartConfig();
+
   chartConfig.data.datasets[0].data = shiftedEnergy
     .map(({ time: x, value: y }) => ({ x, y }));
   chartConfig.options.scales.energy.suggestedMax = Math.round(
@@ -47,7 +49,56 @@ const fetchMetrics = async () => {
     .map(({ time: x, value: y }) => ({ x, y: Math.round(y * 100) }));
 
   new Chart(document.getElementById('chart'), chartConfig);
+
+  // Temps chart.
+
+  const tempChartConfig = getChartConfig();
+
+  const tempLabels = {
+    leavingWater: 'Framledning',
+    outdoor: 'Utomhus',
+    room: 'Rum',
+    tank: 'Varmvatten',
+    target: 'Mål',
+  };
+
+  const tempChart = document.getElementById('chart-temp');
+
+  if (temps) {
+    tempChartConfig.data.datasets = Object.entries(temps)
+      .map(([metric, points]) => ({
+        type: 'line',
+        label: tempLabels[metric],
+        pointHoverRadius: 4,
+        pointHoverBorderWidth: 8,
+        yAxisID: 'temp',
+        data: points
+          .map(transformPoint)
+          .filter(filterTemps),
+        tension: 0.4,
+        cubicInterpolationMode: 'monotone',
+      }));
+  } else {
+    tempChart && tempChart.remove();
+  }
+
+  tempChartConfig.options.scales.temp.display = true;
+  tempChartConfig.options.scales.price.display = false;
+  tempChartConfig.options.scales.energy.display = false;
+
+  if (tempChart) {
+    new Chart(tempChart, tempChartConfig);
+  }
 };
+
+const stepSize = (input) => Math.round(input.scale.max / 3);
+
+const filterTemps = ({ y }) => y > -100;
+
+const transformPoint = ({ time: x, value: y }) => ({ x, y });
+
+const capitalize = (input) =>
+  input.charAt(0).toUpperCase() + input.slice(1);
 
 // https://www.chartjs.org/docs/latest/samples/advanced/linear-gradient.html
 let width, height, gradient;
@@ -60,9 +111,9 @@ function getGradient(ctx, chartArea) {
     width = chartWidth;
     height = chartHeight;
     gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
-    gradient.addColorStop(0, 'rgb(0, 206, 165)') // app: rgb(92, 202, 167)
-    gradient.addColorStop(0.5, 'rgb(255, 211, 52)')
-    gradient.addColorStop(1, 'rgb(224, 95, 9)') // app: rgb(229, 158, 82)
+    gradient.addColorStop(0, 'rgb(0, 206, 165)'); // app: rgb(92, 202, 167)
+    gradient.addColorStop(0.5, 'rgb(255, 211, 52)');
+    gradient.addColorStop(1, 'rgb(224, 95, 9)'); // app: rgb(229, 158, 82)
   }
 
   return gradient;
@@ -76,7 +127,7 @@ Chart.defaults.font = {
 
 Chart.defaults.color = '#515151';
 
-const chartConfig = {
+const getChartConfig = () => ({
   locale: 'sv',
   type: 'scatter',
   data: {
@@ -88,10 +139,10 @@ const chartConfig = {
         backgroundColor: 'rgba(202, 68, 51, 1)',
         borderRadius: {
           topLeft: 4,
-          topRight: 4
+          topRight: 4,
         },
         yAxisID: 'energy',
-        order: 1
+        order: 1,
       },
       {
         type: 'line',
@@ -100,19 +151,18 @@ const chartConfig = {
         stepped: true,
         pointHoverRadius: 6,
         pointHoverBorderWidth: 12,
-        borderColor: function(context) {
+        borderColor: (context) => {
           const chart = context.chart;
-          const {ctx, chartArea} = chart;
+          const { ctx, chartArea } = chart;
 
-          if (!chartArea) {
-            // This case happens on initial chart load
-            return;
-          }
+          // This case happens on initial chart load
+          if (!chartArea) return;
+
           return getGradient(ctx, chartArea);
         },
         pointBorderWidth: 0,
         yAxisID: 'price',
-        order: 0
+        order: 0,
       }
     ],
   },
@@ -121,16 +171,27 @@ const chartConfig = {
     plugins: {
       tooltip: {
         callbacks: {
+          title: ([{ parsed: { x } }]) => {
+            const date = new Date(x);
+            const day = new Intl.DateTimeFormat('sv-SE', { weekday: 'long' }).format(date);
+            const time = new Intl.DateTimeFormat('sv-SE', { hour: 'numeric', minute: 'numeric' }).format(date);
+
+            return `${capitalize(day)} ${time}`;
+          },
           label: (context) => {
-            const { yAxisID: axis } = context.dataset
-            const { y: value } = context.parsed
+            const { yAxisID: axis, label } = context.dataset;
+            const { y: value } = context.parsed;
 
             if (axis === 'price') {
-              return `${value} öre`
+              return `${value} öre`;
             }
 
             if (axis === 'energy') {
-              return `${value} kWh`
+              return `${value} kWh`;
+            }
+
+            if (axis === 'temp') {
+              return `${label}: ${value} °C`;
             }
           }
         },
@@ -138,37 +199,34 @@ const chartConfig = {
           top: 15,
           bottom: 15,
           left: 25,
-          right: 25
+          right: 25,
         },
         displayColors: false,
         titleAlign: 'center',
-        bodyAlign: 'center'
+        bodyAlign: 'center',
       },
       legend: {
-        display: false
+        display: false,
       }
     },
     interaction: {
       mode: 'nearest',
       intersect: false,
-      axis: 'x'
+      axis: 'x',
     },
     elements: {
       point: {
-        radius: 0
+        radius: 0,
       }
     },
     scales: {
       x: {
         type: 'time',
-        time: {
-          tooltipFormat: 'HH:mm'
-        },
         grid: {
-          drawOnChartArea: false
+          drawOnChartArea: false,
         },
         ticks: {
-          callback: (value) => new Date(value).toString().substring(16, 18)
+          callback: (value) => new Date(value).toString().substring(16, 18),
         }
       },
       energy: {
@@ -182,7 +240,17 @@ const chartConfig = {
         ticks: {
           padding: 0,
           callback: (value) => `${value} kWh`,
-          stepSize: (input) => Math.round(input.scale.max / 3)
+          stepSize,
+        },
+      },
+      temp: {
+        type: 'linear',
+        display: false,
+        position: 'left',
+        ticks: {
+          padding: 0,
+          callback: (value) => `${value} °C`,
+          stepSize,
         },
       },
       price: {
@@ -190,16 +258,16 @@ const chartConfig = {
         display: true,
         position: 'right',
         grid: {
-          display: false
+          display: false,
         },
         ticks: {
           padding: 0,
           callback: (value) => `${value} öre`,
-          stepSize: (input) => Math.round(input.scale.max / 3)
+          stepSize,
         },
-      }
+      },
     }
   }
-};
+});
 
 fetchMetrics();
