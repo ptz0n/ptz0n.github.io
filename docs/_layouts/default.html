@@ -1,34 +1,38 @@
 <!doctype html>
 <html class="no-js" lang="sv">
 <head>
-    <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel=stylesheet href="http://fonts.googleapis.com/css?family=Open+Sans:400,600">
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>{{ page.title }}</title>
     <meta name="description"
-        content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="author" content="{{ site.author }}" />
+        content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="{{ site.author }}">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name=viewport content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name=viewport content="width=device-width, initial-scale=1, minimum-scale=1">
 
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="{{ page.title }}" />
+    {% if page.robots -%}
+        <meta name="robots" content="{{ page.robots }}">
+    {%- endif %}
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ page.title }}">
     {% if page.description %}
-    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:description" content="{{ page.description }}">
     {% endif %}
     {% if page.image %}
-    <meta property="og:image" content="{{ site.url }}/images/{{ page.image }}" />
+    <meta property="og:image" content="{{ site.url }}/images/{{ page.image }}">
     {% endif %}
     <meta property="og:url"
-        content="{{ site.url }}{% unless page.url == '/index.html' %}{{ page.url }}{% endunless %}" />
-    <meta property="og:site_name" content="{{ site.title }}" />
+        content="{{ site.url }}{% unless page.url == '/index.html' %}{{ page.url }}{% endunless %}">
+    <meta property="og:site_name" content="{{ site.title }}">
 
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/style.css" media="all" />
-    <link rel="stylesheet" href="/css/print.css" media="print" />
-    <link rel="alternate" type="application/rss+xml" title="Inlägg" href="/rss.xml" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css" media="all">
+    <link rel="stylesheet" href="/css/print.css" media="print">
+    <link rel="alternate" type="application/rss+xml" title="Inlägg" href="/rss.xml">
 
     <!--[if lt IE 9]>
         <script src="/js/html5shiv.js"></script>
