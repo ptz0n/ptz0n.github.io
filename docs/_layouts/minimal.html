@@ -1,0 +1,21 @@
+<!doctype html>
+<html class="no-js" lang="sv">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="description"
+        content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="author" content="{{ site.author }}">
+    {% if page.robots -%}
+      <meta name="robots" content="{{ page.robots }}">
+    {%- endif %}
+    {% if page.link -%}
+      <link rel="canonical" href="{{ page.link }}">
+    {%- endif %}
+</head>
+
+<body>
+  {{ content }}
+</body>
+
+</html>
