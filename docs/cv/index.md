@@ -56,4 +56,4 @@ Nyutveckling och förvaltning av e-handel, primärt på plattformen Magento.
 
 Spenderar gärna tid med familjen och tidsenlig renovering av vårt hus i Tullinge.
 
-Hör gärna av dig om du vill veta mer. [erik@eng.se](mailto:erik@eng.se) / [073-021 30 72](tel:+46730213072)
+Hör gärna av dig om du vill veta mer. [erik@eng.se](mailto:erik@eng.se)
