@@ -2,6 +2,7 @@
 layout: post
 title: Anatomy of a verify-email flow
 description: A recipe for adding self-serve email capture and verification to a service where users only ever sign in through OAuth, with no password, no signup form, and no email address to start with.
+image: verify-email.jpg
 lang: en
 ---
 
